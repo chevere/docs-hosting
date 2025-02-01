@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>VarDump | Chevere</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/logo.png">
+    <link rel="apple-touch-icon" href="/logo.png">
+    <meta name="description" content="High quality library for building server-side software">
+    <meta property="og:site_name" content="Chevere">
+    <meta property="og:title" content="VarDump">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/packages/var-dump.html">
+    <meta name="twitter:title" content="VarDump">
+    <meta name="twitter:url" content="/packages/var-dump.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preload" href="/assets/css/0.styles.0f7b7e19.css" as="style"><link rel="preload" href="/assets/js/app.ee3c58bd.js" as="script"><link rel="preload" href="/assets/js/2.754c0035.js" as="script"><link rel="preload" href="/assets/js/1.079bb7fc.js" as="script"><link rel="preload" href="/assets/js/51.1989daf5.js" as="script"><link rel="prefetch" href="/assets/js/10.e1a55676.js"><link rel="prefetch" href="/assets/js/11.080e2294.js"><link rel="prefetch" href="/assets/js/12.43ffbcdd.js"><link rel="prefetch" href="/assets/js/13.697eea09.js"><link rel="prefetch" href="/assets/js/14.f6d7c1c9.js"><link rel="prefetch" href="/assets/js/15.0b2b1303.js"><link rel="prefetch" href="/assets/js/16.3b4c54d3.js"><link rel="prefetch" href="/assets/js/17.03935455.js"><link rel="prefetch" href="/assets/js/18.81c550b2.js"><link rel="prefetch" href="/assets/js/19.f516f075.js"><link rel="prefetch" href="/assets/js/20.12dc7fcc.js"><link rel="prefetch" href="/assets/js/21.8e838c4a.js"><link rel="prefetch" href="/assets/js/22.7716d600.js"><link rel="prefetch" href="/assets/js/23.af25ae7c.js"><link rel="prefetch" href="/assets/js/24.1df02aab.js"><link rel="prefetch" href="/assets/js/25.86255434.js"><link rel="prefetch" href="/assets/js/26.4017c57b.js"><link rel="prefetch" href="/assets/js/27.d2540f80.js"><link rel="prefetch" href="/assets/js/28.f420608d.js"><link rel="prefetch" href="/assets/js/29.04881153.js"><link rel="prefetch" href="/assets/js/3.8d22703b.js"><link rel="prefetch" href="/assets/js/30.833c8b68.js"><link rel="prefetch" href="/assets/js/31.b4d04579.js"><link rel="prefetch" href="/assets/js/32.eef21146.js"><link rel="prefetch" href="/assets/js/33.daae5b68.js"><link rel="prefetch" href="/assets/js/34.5373008b.js"><link rel="prefetch" href="/assets/js/35.61c1a7de.js"><link rel="prefetch" href="/assets/js/36.ad383afc.js"><link rel="prefetch" href="/assets/js/37.347cf12a.js"><link rel="prefetch" href="/assets/js/38.02bbecb5.js"><link rel="prefetch" href="/assets/js/39.4c9fd8e2.js"><link rel="prefetch" href="/assets/js/4.3f0ad834.js"><link rel="prefetch" href="/assets/js/40.2af40233.js"><link rel="prefetch" href="/assets/js/41.406cd9a5.js"><link rel="prefetch" href="/assets/js/42.c4424156.js"><link rel="prefetch" href="/assets/js/43.2034fc4c.js"><link rel="prefetch" href="/assets/js/44.c0b50d55.js"><link rel="prefetch" href="/assets/js/45.555db368.js"><link rel="prefetch" href="/assets/js/46.b977278b.js"><link rel="prefetch" href="/assets/js/47.aea6f6e8.js"><link rel="prefetch" href="/assets/js/48.b22a5d7f.js"><link rel="prefetch" href="/assets/js/49.da4cef1d.js"><link rel="prefetch" href="/assets/js/5.b299c814.js"><link rel="prefetch" href="/assets/js/50.80bcd9ce.js"><link rel="prefetch" href="/assets/js/52.1e89b00f.js"><link rel="prefetch" href="/assets/js/53.8a63b325.js"><link rel="prefetch" href="/assets/js/54.f6d8e976.js"><link rel="prefetch" href="/assets/js/55.11174f37.js"><link rel="prefetch" href="/assets/js/6.231ae416.js"><link rel="prefetch" href="/assets/js/7.a0e4ad9e.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.963f20fa.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0f7b7e19.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.svg" alt="Chevere" class="logo"> <span class="site-name can-hide">Chevere</span></a> <div class="links"><form id="search-form" role="search" class="algolia-search-wrapper search-box"><input id="algolia-search-input" class="search-query"></form> <nav class="nav-links can-hide"><div class="nav-item"><a href="/introduction/" class="nav-link">
+  Intro
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Packages Menu" class="dropdown-title"><span class="title">Packages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Packages Menu" class="mobile-dropdown-title"><span class="title">Packages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/packages/action.html" class="nav-link">
+  Action
+</a></li><li class="dropdown-item"><!----> <a href="/packages/cache.html" class="nav-link">
+  Cache
+</a></li><li class="dropdown-item"><!----> <a href="/packages/danky.html" class="nav-link">
+  Danky
+</a></li><li class="dropdown-item"><!----> <a href="/packages/data-structure.html" class="nav-link">
+  DataStructure
+</a></li><li class="dropdown-item"><!----> <a href="/packages/filesystem.html" class="nav-link">
+  Filesystem
+</a></li><li class="dropdown-item"><!----> <a href="/packages/http.html" class="nav-link">
+  Http
+</a></li><li class="dropdown-item"><!----> <a href="/packages/message.html" class="nav-link">
+  Message
+</a></li><li class="dropdown-item"><!----> <a href="/packages/parameter.html" class="nav-link">
+  Parameter
+</a></li><li class="dropdown-item"><!----> <a href="/packages/regex.html" class="nav-link">
+  Regex
+</a></li><li class="dropdown-item"><!----> <a href="/packages/router.html" class="nav-link">
+  Router
+</a></li><li class="dropdown-item"><!----> <a href="/packages/schwager.html" class="nav-link">
+  Schwager
+</a></li><li class="dropdown-item"><!----> <a href="/packages/sql2p.html" class="nav-link">
+  SQL2P
+</a></li><li class="dropdown-item"><!----> <a href="/packages/standard.html" class="nav-link">
+  Standard
+</a></li><li class="dropdown-item"><!----> <a href="/packages/throwable-handler.html" class="nav-link">
+  ThrowableHandler
+</a></li><li class="dropdown-item"><!----> <a href="/packages/trace.html" class="nav-link">
+  Trace
+</a></li><li class="dropdown-item"><!----> <a href="/packages/var-dump.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  VarDump
+</a></li><li class="dropdown-item"><!----> <a href="/packages/var-support.html" class="nav-link">
+  VarSupport
+</a></li><li class="dropdown-item"><!----> <a href="/packages/workflow.html" class="nav-link">
+  Workflow
+</a></li><li class="dropdown-item"><!----> <a href="/packages/writer.html" class="nav-link">
+  Writer
+</a></li><li class="dropdown-item"><!----> <a href="/packages/xrdebug.html" class="nav-link">
+  xrDebug
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Dev Menu" class="dropdown-title"><span class="title">Dev</span> <span class="arrow down"></span></button> <button type="button" aria-label="Dev Menu" class="mobile-dropdown-title"><span class="title">Dev</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Standard
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/standard/quality.html" class="nav-link">
+  Quality
+</a></li><li class="dropdown-subitem"><a href="/developer/standard/coding.html" class="nav-link">
+  Coding
+</a></li><li class="dropdown-subitem"><a href="/developer/standard/immutability.html" class="nav-link">
+  Immutability
+</a></li><li class="dropdown-subitem"><a href="/developer/standard/testing.html" class="nav-link">
+  Testing
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Spec
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/spec/interfaces.html" class="nav-link">
+  Interfaces
+</a></li><li class="dropdown-subitem"><a href="/developer/spec/components.html" class="nav-link">
+  Components
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Environment
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/environment/system.html" class="nav-link">
+  System
+</a></li><li class="dropdown-subitem"><a href="/developer/environment/workspace.html" class="nav-link">
+  Workspace
+</a></li></ul></li></ul></div></div> <a href="https://github.com/chevere/chevere" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/introduction/" class="nav-link">
+  Intro
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Packages Menu" class="dropdown-title"><span class="title">Packages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Packages Menu" class="mobile-dropdown-title"><span class="title">Packages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/packages/action.html" class="nav-link">
+  Action
+</a></li><li class="dropdown-item"><!----> <a href="/packages/cache.html" class="nav-link">
+  Cache
+</a></li><li class="dropdown-item"><!----> <a href="/packages/danky.html" class="nav-link">
+  Danky
+</a></li><li class="dropdown-item"><!----> <a href="/packages/data-structure.html" class="nav-link">
+  DataStructure
+</a></li><li class="dropdown-item"><!----> <a href="/packages/filesystem.html" class="nav-link">
+  Filesystem
+</a></li><li class="dropdown-item"><!----> <a href="/packages/http.html" class="nav-link">
+  Http
+</a></li><li class="dropdown-item"><!----> <a href="/packages/message.html" class="nav-link">
+  Message
+</a></li><li class="dropdown-item"><!----> <a href="/packages/parameter.html" class="nav-link">
+  Parameter
+</a></li><li class="dropdown-item"><!----> <a href="/packages/regex.html" class="nav-link">
+  Regex
+</a></li><li class="dropdown-item"><!----> <a href="/packages/router.html" class="nav-link">
+  Router
+</a></li><li class="dropdown-item"><!----> <a href="/packages/schwager.html" class="nav-link">
+  Schwager
+</a></li><li class="dropdown-item"><!----> <a href="/packages/sql2p.html" class="nav-link">
+  SQL2P
+</a></li><li class="dropdown-item"><!----> <a href="/packages/standard.html" class="nav-link">
+  Standard
+</a></li><li class="dropdown-item"><!----> <a href="/packages/throwable-handler.html" class="nav-link">
+  ThrowableHandler
+</a></li><li class="dropdown-item"><!----> <a href="/packages/trace.html" class="nav-link">
+  Trace
+</a></li><li class="dropdown-item"><!----> <a href="/packages/var-dump.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  VarDump
+</a></li><li class="dropdown-item"><!----> <a href="/packages/var-support.html" class="nav-link">
+  VarSupport
+</a></li><li class="dropdown-item"><!----> <a href="/packages/workflow.html" class="nav-link">
+  Workflow
+</a></li><li class="dropdown-item"><!----> <a href="/packages/writer.html" class="nav-link">
+  Writer
+</a></li><li class="dropdown-item"><!----> <a href="/packages/xrdebug.html" class="nav-link">
+  xrDebug
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Dev Menu" class="dropdown-title"><span class="title">Dev</span> <span class="arrow down"></span></button> <button type="button" aria-label="Dev Menu" class="mobile-dropdown-title"><span class="title">Dev</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Standard
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/standard/quality.html" class="nav-link">
+  Quality
+</a></li><li class="dropdown-subitem"><a href="/developer/standard/coding.html" class="nav-link">
+  Coding
+</a></li><li class="dropdown-subitem"><a href="/developer/standard/immutability.html" class="nav-link">
+  Immutability
+</a></li><li class="dropdown-subitem"><a href="/developer/standard/testing.html" class="nav-link">
+  Testing
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Spec
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/spec/interfaces.html" class="nav-link">
+  Interfaces
+</a></li><li class="dropdown-subitem"><a href="/developer/spec/components.html" class="nav-link">
+  Components
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Environment
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/environment/system.html" class="nav-link">
+  System
+</a></li><li class="dropdown-subitem"><a href="/developer/environment/workspace.html" class="nav-link">
+  Workspace
+</a></li></ul></li></ul></div></div> <a href="https://github.com/chevere/chevere" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>VarDump</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/packages/var-dump.html#summary" class="sidebar-link">Summary</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/packages/var-dump.html#installing" class="sidebar-link">Installing</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/packages/var-dump.html#global-installation" class="sidebar-link">Global installation</a></li></ul></li><li><a href="/packages/var-dump.html#quick-start" class="sidebar-link">Quick start</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/packages/var-dump.html#demo" class="sidebar-link">Demo</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/packages/var-dump.html#features" class="sidebar-link">Features</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/packages/var-dump.html#helpers" class="sidebar-link">Helpers</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/packages/var-dump.html#vardump-vd" class="sidebar-link">VarDump (vd)</a></li><li class="sidebar-sub-header"><a href="/packages/var-dump.html#vardump-and-die-vdd" class="sidebar-link">VarDump and die (vdd)</a></li></ul></li><li><a href="/packages/var-dump.html#advanced-usage" class="sidebar-link">Advanced usage</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/packages/var-dump.html#instance-helpers" class="sidebar-link">Instance helpers</a></li><li class="sidebar-sub-header"><a href="/packages/var-dump.html#passing-variables" class="sidebar-link">Passing variables</a></li><li class="sidebar-sub-header"><a href="/packages/var-dump.html#shifting-traces" class="sidebar-link">Shifting traces</a></li><li class="sidebar-sub-header"><a href="/packages/var-dump.html#process" class="sidebar-link">Process</a></li><li class="sidebar-sub-header"><a href="/packages/var-dump.html#vardumpinstance" class="sidebar-link">VarDumpInstance</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vardump"><a href="#vardump" class="header-anchor">#</a> VarDump</h1> <h2 id="summary"><a href="#summary" class="header-anchor">#</a> Summary</h2> <p>Multi-purpose colorful modern alternative to <a href="https://www.php.net/manual/function.var-dump.php" target="_blank" rel="noopener noreferrer">var_dump<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.</p> <div class="custom-block tip"><p class="custom-block-title">💡 VarDump introduction</p> <p>Read <a href="https://rodolfoberrios.com/2022/05/24/var-dump/" target="_blank" rel="noopener noreferrer">VarDump for PHP<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> at Rodolfo's blog for a compressive introduction to this package.</p></div> <h2 id="installing"><a href="#installing" class="header-anchor">#</a> Installing</h2> <p>VarDump is available through <a href="https://packagist.org/packages/chevere/var-dump" target="_blank" rel="noopener noreferrer">Packagist<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> and the repository source is at <a href="https://github.com/chevere/var-dump" target="_blank" rel="noopener noreferrer">chevere/var-dump<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.</p> <p>Run the following command to install VarDump as a development dependency of your project:</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">composer</span> require <span class="token parameter variable">--dev</span> chevere/var-dump
+</code></pre></div><h3 id="global-installation"><a href="#global-installation" class="header-anchor">#</a> Global installation</h3> <p>To make the <code>vd()</code> function available globally in any PHP code, install VarDump globally:</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">composer</span> global require chevere/var-dump
+</code></pre></div><p>If not already configured, add the global Composer dependencies to your <code>php.ini</code>:</p> <div class="language-ini extra-class"><pre class="language-ini"><code><span class="token key attr-name">auto_prepend_file</span> <span class="token punctuation">=</span> <span class="token value attr-value">${HOME}/.composer/vendor/autoload.php</span>
+</code></pre></div><p>Run the following command to select and update the <code>auto_prepend_file</code> directive in your <code>php.ini</code>:</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">bash</span> <span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token function">curl</span> <span class="token parameter variable">-sL</span> chevere.org/bin/composer/global-prepend.sh<span class="token punctuation">)</span>
+</code></pre></div><p>You can now use VarDump in any PHP script without requiring the library for each project.</p> <h2 id="quick-start"><a href="#quick-start" class="header-anchor">#</a> Quick start</h2> <ul><li>Use <code>vd</code> to dump information about any variable (replaces <code>var_dump</code> and <code>dump</code>)</li> <li>Use <code>vdd</code> to do the same as <code>vd</code> and <code>die(0)</code> (replaces <code>dd</code>)</li></ul> <div class="language-php extra-class"><pre class="language-php"><code><span class="token function">vd</span><span class="token punctuation">(</span><span class="token variable">$myVar</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// var dump</span>
+<span class="token function">vdd</span><span class="token punctuation">(</span><span class="token variable">$myVar</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// var dump and die</span>
+</code></pre></div><h2 id="demo"><a href="#demo" class="header-anchor">#</a> Demo</h2> <p><img src="/src/packages/var-dump-demo.svg" alt="HTML demo"></p> <ul><li><a href="https://chevere.github.io/var-dump/demo/output/html.html" target="_blank" rel="noopener noreferrer">HTML<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://chevere.github.io/var-dump/demo/output/plain.txt" target="_blank" rel="noopener noreferrer">Plain text<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://asciinema.org/a/496889" target="_blank" rel="noopener noreferrer">Console (asciinema)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h2 id="features"><a href="#features" class="header-anchor">#</a> Features</h2> <ul><li>Provides vd (VarDump) and vdd (VarDump &amp; die) <a href="#helpers">helpers</a></li> <li>Colorful typed variable introspection</li> <li>Reports visibility</li> <li>Detects circular references</li> <li>Stream-based
+<ul><li>Writes line-by-line</li> <li>Handles <em>really</em> large documents</li></ul></li> <li>Provides caller information</li> <li>Console document
+<ul><li>Colorful console output (where available)</li></ul></li> <li>Plain document
+<ul><li>Same as console (no-color)</li> <li>Same as copy HTML text</li></ul></li> <li>HTML document
+<ul><li>Colorful representation</li> <li>Portable (also used on <a href="/packages/xrdebug.html">xrDebug</a>)</li></ul></li></ul> <h2 id="helpers"><a href="#helpers" class="header-anchor">#</a> Helpers</h2> <p>💡 <strong>TL;DR:</strong> You can replace <code>var_dump</code> in both CLI and HTTP context using the following helpers:</p> <h3 id="vardump-vd"><a href="#vardump-vd" class="header-anchor">#</a> VarDump (vd)</h3> <p>Function <code>vd</code> is a drop-in replacement for <code>var_dump</code>. It prints information about one or more variables to the output stream.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token function">vd</span><span class="token punctuation">(</span><span class="token variable">$var1</span><span class="token punctuation">,</span> <span class="token variable">$var2</span><span class="token punctuation">,</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// more code</span>
+</code></pre></div><h3 id="vardump-and-die-vdd"><a href="#vardump-and-die-vdd" class="header-anchor">#</a> VarDump and die (vdd)</h3> <p>Function <code>vdd</code> does same as <code>vd</code>, but with <code>die(0)</code> which halts further execution.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token function">vdd</span><span class="token punctuation">(</span><span class="token variable">$var</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// exit()</span>
+</code></pre></div><h2 id="advanced-usage"><a href="#advanced-usage" class="header-anchor">#</a> Advanced usage</h2> <p>A VarDump needs a format and an output. In the example below a VarDump object is created with console colored formatting and output:</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>VarDump<span class="token punctuation">\</span>Formats<span class="token punctuation">\</span>ConsoleFormat</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>VarDump<span class="token punctuation">\</span>Outputs<span class="token punctuation">\</span>ConsoleOutput</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>VarDump<span class="token punctuation">\</span>VarDump</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>VarDump<span class="token punctuation">\</span>varDumpConsole</span><span class="token punctuation">;</span>
+
+<span class="token variable">$varDump</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">VarDump</span><span class="token punctuation">(</span>
+    <span class="token argument-name">formatter</span><span class="token punctuation">:</span> <span class="token keyword">new</span> <span class="token class-name">ConsoleFormat</span><span class="token punctuation">,</span>
+    <span class="token argument-name">outputter</span><span class="token punctuation">:</span> <span class="token keyword">new</span> <span class="token class-name">ConsoleOutput</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// Same as:</span>
+<span class="token variable">$varDump</span> <span class="token operator">=</span> <span class="token function">varDumpConsole</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="instance-helpers"><a href="#instance-helpers" class="header-anchor">#</a> Instance helpers</h3> <p>The following helper functions can be used to initialize a VarDump object.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>VarDump<span class="token punctuation">\</span>varDumpPlain</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>VarDump<span class="token punctuation">\</span>varDumpConsole</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>VarDump<span class="token punctuation">\</span>varDumpHtml</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Plain text</span>
+<span class="token variable">$varDump</span> <span class="token operator">=</span> <span class="token function">varDumpPlain</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// Colored console</span>
+<span class="token variable">$varDump</span> <span class="token operator">=</span> <span class="token function">varDumpConsole</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// HTML</span>
+<span class="token variable">$varDump</span> <span class="token operator">=</span> <span class="token function">varDumpHtml</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>The <code>varDump</code> helper can be used to access to the <a href="#vardumpinstance">VarDumpInstance</a>. If no instance has been created it will provide a console VarDump.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>VarDump<span class="token punctuation">\</span>varDump</span><span class="token punctuation">;</span>
+
+<span class="token variable">$varDump</span> <span class="token operator">=</span> <span class="token function">varDump</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="passing-variables"><a href="#passing-variables" class="header-anchor">#</a> Passing variables</h3> <p>The method <code>withVars</code> is used to pass <code>...$variables</code> (variadic).</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token variable">$varDump</span> <span class="token operator">=</span> <span class="token variable">$varDump</span><span class="token operator">-&gt;</span><span class="token function">withVars</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'a var'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token constant">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="shifting-traces"><a href="#shifting-traces" class="header-anchor">#</a> Shifting traces</h3> <p>The dump information could be affected by layers on top of VarDump, the method <code>withShift</code> can be used to indicate how many previous backtrace should be removed.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token variable">$varDump</span> <span class="token operator">=</span> <span class="token variable">$varDump</span><span class="token operator">-&gt;</span><span class="token function">withShift</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// removes the first trace</span>
+</code></pre></div><h3 id="process"><a href="#process" class="header-anchor">#</a> Process</h3> <p>The method <code>process</code> is used to trigger the var dumping process. It requires to pass a <a href="/packages/writer.html">writer</a> where the dump information will be written.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>Writer<span class="token punctuation">\</span>StreamWriter</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>Writer<span class="token punctuation">\</span>streamFor</span><span class="token punctuation">;</span>
+
+<span class="token variable">$varDump</span><span class="token operator">-&gt;</span><span class="token function">process</span><span class="token punctuation">(</span>
+    <span class="token argument-name">writer</span><span class="token punctuation">:</span> <span class="token keyword">new</span> <span class="token class-name">StreamWriter</span><span class="token punctuation">(</span>
+      <span class="token function">streamFor</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'php://stdout'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'w'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="vardumpinstance"><a href="#vardumpinstance" class="header-anchor">#</a> VarDumpInstance</h3> <p>By initializing <code>Chevere/VarDump/VarDumpInstance</code> you can change the default VarDump context, which is used in <code>vd</code> and <code>vdd</code> helpers.</p> <p>In the code below, <code>varDumpHtml</code> has been passed to configure <code>VarDumpInstance</code> to handle everything with HTML formatting.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>VarDump<span class="token punctuation">\</span>VarDumpInstance</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>VarDump<span class="token punctuation">\</span>varDump</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>VarDump<span class="token punctuation">\</span>varDumpHtml</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Default VarDump console</span>
+<span class="token variable">$varDump</span> <span class="token operator">=</span> <span class="token function">varDump</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// Set instance to VarDump Html</span>
+<span class="token keyword">new</span> <span class="token class-name">VarDumpInstance</span><span class="token punctuation">(</span><span class="token function">varDumpHtml</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// Instance VarDump html</span>
+<span class="token variable">$varDump</span> <span class="token operator">=</span> <span class="token function">varDump</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/chevere/docs/edit/main/packages/var-dump.md" target="_blank" rel="noopener noreferrer">Edit this page</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.ee3c58bd.js" defer></script><script src="/assets/js/2.754c0035.js" defer></script><script src="/assets/js/1.079bb7fc.js" defer></script><script src="/assets/js/51.1989daf5.js" defer></script>
+  </body>
+</html>
