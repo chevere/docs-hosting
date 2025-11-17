@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Workflow | Chevere</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/logo.png">
+    <link rel="apple-touch-icon" href="/logo.png">
+    <meta name="description" content="High quality library for building server-side software">
+    <meta property="og:site_name" content="Chevere">
+    <meta property="og:title" content="Workflow">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/packages/workflow.html">
+    <meta name="twitter:title" content="Workflow">
+    <meta name="twitter:url" content="/packages/workflow.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preload" href="/assets/css/0.styles.0f7b7e19.css" as="style"><link rel="preload" href="/assets/js/app.cd076812.js" as="script"><link rel="preload" href="/assets/js/2.b3d98ebb.js" as="script"><link rel="preload" href="/assets/js/1.cbf95cfe.js" as="script"><link rel="preload" href="/assets/js/51.4dc3ee52.js" as="script"><link rel="prefetch" href="/assets/js/10.ce1ffa88.js"><link rel="prefetch" href="/assets/js/11.19c30390.js"><link rel="prefetch" href="/assets/js/12.63244053.js"><link rel="prefetch" href="/assets/js/13.7278834f.js"><link rel="prefetch" href="/assets/js/14.ddbbd723.js"><link rel="prefetch" href="/assets/js/15.951b87f8.js"><link rel="prefetch" href="/assets/js/16.22953f39.js"><link rel="prefetch" href="/assets/js/17.37cdd360.js"><link rel="prefetch" href="/assets/js/18.ac720a26.js"><link rel="prefetch" href="/assets/js/19.265c60db.js"><link rel="prefetch" href="/assets/js/20.b5e0f461.js"><link rel="prefetch" href="/assets/js/21.f8a5d0fc.js"><link rel="prefetch" href="/assets/js/22.bb00601c.js"><link rel="prefetch" href="/assets/js/23.93e527a5.js"><link rel="prefetch" href="/assets/js/24.3d6b31cb.js"><link rel="prefetch" href="/assets/js/25.79dea3c6.js"><link rel="prefetch" href="/assets/js/26.004bf132.js"><link rel="prefetch" href="/assets/js/27.8e054240.js"><link rel="prefetch" href="/assets/js/28.42c49d73.js"><link rel="prefetch" href="/assets/js/29.05fbe802.js"><link rel="prefetch" href="/assets/js/3.f1e808b9.js"><link rel="prefetch" href="/assets/js/30.aa21d074.js"><link rel="prefetch" href="/assets/js/31.e70afbfe.js"><link rel="prefetch" href="/assets/js/32.cfb0ea4f.js"><link rel="prefetch" href="/assets/js/33.1a8363dd.js"><link rel="prefetch" href="/assets/js/34.fffa1c28.js"><link rel="prefetch" href="/assets/js/35.34dbf8b8.js"><link rel="prefetch" href="/assets/js/36.4988d46a.js"><link rel="prefetch" href="/assets/js/37.a128e0c7.js"><link rel="prefetch" href="/assets/js/38.317c6754.js"><link rel="prefetch" href="/assets/js/39.5f081af9.js"><link rel="prefetch" href="/assets/js/4.17348ca1.js"><link rel="prefetch" href="/assets/js/40.4879baa3.js"><link rel="prefetch" href="/assets/js/41.9b888e96.js"><link rel="prefetch" href="/assets/js/42.cf5d1195.js"><link rel="prefetch" href="/assets/js/43.007e64f0.js"><link rel="prefetch" href="/assets/js/44.d8958243.js"><link rel="prefetch" href="/assets/js/45.30a0edc4.js"><link rel="prefetch" href="/assets/js/46.1a84d266.js"><link rel="prefetch" href="/assets/js/47.7231605e.js"><link rel="prefetch" href="/assets/js/48.1ac22ee5.js"><link rel="prefetch" href="/assets/js/49.d8a7b924.js"><link rel="prefetch" href="/assets/js/5.e159fa16.js"><link rel="prefetch" href="/assets/js/50.37c004a9.js"><link rel="prefetch" href="/assets/js/52.ef4b0ad0.js"><link rel="prefetch" href="/assets/js/53.6167703d.js"><link rel="prefetch" href="/assets/js/6.e3ac936f.js"><link rel="prefetch" href="/assets/js/7.8fcd73e7.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.92fa0d62.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0f7b7e19.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.svg" alt="Chevere" class="logo"> <span class="site-name can-hide">Chevere</span></a> <div class="links"><form id="search-form" role="search" class="algolia-search-wrapper search-box"><input id="algolia-search-input" class="search-query"></form> <nav class="nav-links can-hide"><div class="nav-item"><a href="/introduction/" class="nav-link">
+  Intro
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Packages Menu" class="dropdown-title"><span class="title">Packages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Packages Menu" class="mobile-dropdown-title"><span class="title">Packages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/packages/action.html" class="nav-link">
+  Action
+</a></li><li class="dropdown-item"><!----> <a href="/packages/data-structure.html" class="nav-link">
+  DataStructure
+</a></li><li class="dropdown-item"><!----> <a href="/packages/filesystem.html" class="nav-link">
+  Filesystem
+</a></li><li class="dropdown-item"><!----> <a href="/packages/http.html" class="nav-link">
+  Http
+</a></li><li class="dropdown-item"><!----> <a href="/packages/message.html" class="nav-link">
+  Message
+</a></li><li class="dropdown-item"><!----> <a href="/packages/parameter.html" class="nav-link">
+  Parameter
+</a></li><li class="dropdown-item"><!----> <a href="/packages/regex.html" class="nav-link">
+  Regex
+</a></li><li class="dropdown-item"><!----> <a href="/packages/router.html" class="nav-link">
+  Router
+</a></li><li class="dropdown-item"><!----> <a href="/packages/schwager.html" class="nav-link">
+  Schwager
+</a></li><li class="dropdown-item"><!----> <a href="/packages/sql2p.html" class="nav-link">
+  SQL2P
+</a></li><li class="dropdown-item"><!----> <a href="/packages/standard.html" class="nav-link">
+  Standard
+</a></li><li class="dropdown-item"><!----> <a href="/packages/throwable-handler.html" class="nav-link">
+  ThrowableHandler
+</a></li><li class="dropdown-item"><!----> <a href="/packages/trace.html" class="nav-link">
+  Trace
+</a></li><li class="dropdown-item"><!----> <a href="/packages/var-dump.html" class="nav-link">
+  VarDump
+</a></li><li class="dropdown-item"><!----> <a href="/packages/var-support.html" class="nav-link">
+  VarSupport
+</a></li><li class="dropdown-item"><!----> <a href="/packages/workflow.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Workflow
+</a></li><li class="dropdown-item"><!----> <a href="/packages/writer.html" class="nav-link">
+  Writer
+</a></li><li class="dropdown-item"><!----> <a href="/packages/xrdebug.html" class="nav-link">
+  xrDebug
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Dev Menu" class="dropdown-title"><span class="title">Dev</span> <span class="arrow down"></span></button> <button type="button" aria-label="Dev Menu" class="mobile-dropdown-title"><span class="title">Dev</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Standard
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/standard/quality.html" class="nav-link">
+  Quality
+</a></li><li class="dropdown-subitem"><a href="/developer/standard/coding.html" class="nav-link">
+  Coding
+</a></li><li class="dropdown-subitem"><a href="/developer/standard/immutability.html" class="nav-link">
+  Immutability
+</a></li><li class="dropdown-subitem"><a href="/developer/standard/testing.html" class="nav-link">
+  Testing
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Spec
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/spec/interfaces.html" class="nav-link">
+  Interfaces
+</a></li><li class="dropdown-subitem"><a href="/developer/spec/components.html" class="nav-link">
+  Components
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Environment
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/environment/system.html" class="nav-link">
+  System
+</a></li><li class="dropdown-subitem"><a href="/developer/environment/workspace.html" class="nav-link">
+  Workspace
+</a></li></ul></li></ul></div></div> <a href="https://github.com/chevere/chevere" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/introduction/" class="nav-link">
+  Intro
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Packages Menu" class="dropdown-title"><span class="title">Packages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Packages Menu" class="mobile-dropdown-title"><span class="title">Packages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/packages/action.html" class="nav-link">
+  Action
+</a></li><li class="dropdown-item"><!----> <a href="/packages/data-structure.html" class="nav-link">
+  DataStructure
+</a></li><li class="dropdown-item"><!----> <a href="/packages/filesystem.html" class="nav-link">
+  Filesystem
+</a></li><li class="dropdown-item"><!----> <a href="/packages/http.html" class="nav-link">
+  Http
+</a></li><li class="dropdown-item"><!----> <a href="/packages/message.html" class="nav-link">
+  Message
+</a></li><li class="dropdown-item"><!----> <a href="/packages/parameter.html" class="nav-link">
+  Parameter
+</a></li><li class="dropdown-item"><!----> <a href="/packages/regex.html" class="nav-link">
+  Regex
+</a></li><li class="dropdown-item"><!----> <a href="/packages/router.html" class="nav-link">
+  Router
+</a></li><li class="dropdown-item"><!----> <a href="/packages/schwager.html" class="nav-link">
+  Schwager
+</a></li><li class="dropdown-item"><!----> <a href="/packages/sql2p.html" class="nav-link">
+  SQL2P
+</a></li><li class="dropdown-item"><!----> <a href="/packages/standard.html" class="nav-link">
+  Standard
+</a></li><li class="dropdown-item"><!----> <a href="/packages/throwable-handler.html" class="nav-link">
+  ThrowableHandler
+</a></li><li class="dropdown-item"><!----> <a href="/packages/trace.html" class="nav-link">
+  Trace
+</a></li><li class="dropdown-item"><!----> <a href="/packages/var-dump.html" class="nav-link">
+  VarDump
+</a></li><li class="dropdown-item"><!----> <a href="/packages/var-support.html" class="nav-link">
+  VarSupport
+</a></li><li class="dropdown-item"><!----> <a href="/packages/workflow.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Workflow
+</a></li><li class="dropdown-item"><!----> <a href="/packages/writer.html" class="nav-link">
+  Writer
+</a></li><li class="dropdown-item"><!----> <a href="/packages/xrdebug.html" class="nav-link">
+  xrDebug
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Dev Menu" class="dropdown-title"><span class="title">Dev</span> <span class="arrow down"></span></button> <button type="button" aria-label="Dev Menu" class="mobile-dropdown-title"><span class="title">Dev</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Standard
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/standard/quality.html" class="nav-link">
+  Quality
+</a></li><li class="dropdown-subitem"><a href="/developer/standard/coding.html" class="nav-link">
+  Coding
+</a></li><li class="dropdown-subitem"><a href="/developer/standard/immutability.html" class="nav-link">
+  Immutability
+</a></li><li class="dropdown-subitem"><a href="/developer/standard/testing.html" class="nav-link">
+  Testing
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Spec
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/spec/interfaces.html" class="nav-link">
+  Interfaces
+</a></li><li class="dropdown-subitem"><a href="/developer/spec/components.html" class="nav-link">
+  Components
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Environment
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/environment/system.html" class="nav-link">
+  System
+</a></li><li class="dropdown-subitem"><a href="/developer/environment/workspace.html" class="nav-link">
+  Workspace
+</a></li></ul></li></ul></div></div> <a href="https://github.com/chevere/chevere" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Workflow</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/packages/workflow.html#summary" class="sidebar-link">Summary</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/packages/workflow.html#installing" class="sidebar-link">Installing</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/packages/workflow.html#what-it-does" class="sidebar-link">What it does?</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/packages/workflow.html#how-to-use" class="sidebar-link">How to use</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/packages/workflow.html#functions" class="sidebar-link">Functions</a></li><li class="sidebar-sub-header"><a href="/packages/workflow.html#key-concepts" class="sidebar-link">Key concepts</a></li></ul></li><li><a href="/packages/workflow.html#workflow-example" class="sidebar-link">Workflow example</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/packages/workflow.html#variable" class="sidebar-link">Variable</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/packages/workflow.html#response" class="sidebar-link">Response</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/packages/workflow.html#job" class="sidebar-link">Job</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/packages/workflow.html#arguments" class="sidebar-link">Arguments</a></li><li class="sidebar-sub-header"><a href="/packages/workflow.html#asynchronous" class="sidebar-link">Asynchronous</a></li><li class="sidebar-sub-header"><a href="/packages/workflow.html#synchronous" class="sidebar-link">Synchronous</a></li><li class="sidebar-sub-header"><a href="/packages/workflow.html#conditional-running" class="sidebar-link">Conditional running</a></li><li class="sidebar-sub-header"><a href="/packages/workflow.html#dependencies" class="sidebar-link">Dependencies</a></li></ul></li><li><a href="/packages/workflow.html#running" class="sidebar-link">Running</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/packages/workflow.html#access-job-response" class="sidebar-link">Access Job response</a></li><li class="sidebar-sub-header"><a href="/packages/workflow.html#workflowtrait" class="sidebar-link">WorkflowTrait</a></li><li class="sidebar-sub-header"><a href="/packages/workflow.html#exception-handling" class="sidebar-link">Exception handling</a></li></ul></li><li><a href="/packages/workflow.html#demo" class="sidebar-link">Demo</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/packages/workflow.html#testing" class="sidebar-link">Testing</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/packages/workflow.html#testing-job-actions" class="sidebar-link">Testing Job Actions</a></li><li class="sidebar-sub-header"><a href="/packages/workflow.html#testing-workflow-graph" class="sidebar-link">Testing Workflow Graph</a></li><li class="sidebar-sub-header"><a href="/packages/workflow.html#testing-job-responses" class="sidebar-link">Testing Job Responses</a></li><li class="sidebar-sub-header"><a href="/packages/workflow.html#testing-exception-handling" class="sidebar-link">Testing Exception Handling</a></li></ul></li><li><a href="/packages/workflow.html#architecture" class="sidebar-link">Architecture</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="workflow"><a href="#workflow" class="header-anchor">#</a> Workflow</h1> <h2 id="summary"><a href="#summary" class="header-anchor">#</a> Summary</h2> <p>A Workflow is a configurable stored procedure that will run one or more jobs. Jobs are independent from each other, but interconnected as you can pass response references between jobs. Jobs supports conditional running based on variables and previous job responses.</p> <h2 id="installing"><a href="#installing" class="header-anchor">#</a> Installing</h2> <p>Workflow is available through <a href="https://packagist.org/packages/chevere/workflow" target="_blank" rel="noopener noreferrer">Packagist<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> and the repository source is at <a href="https://github.com/chevere/workflow" target="_blank" rel="noopener noreferrer">chevere/workflow<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">composer</span> require chevere/workflow
+</code></pre></div><h2 id="what-it-does"><a href="#what-it-does" class="header-anchor">#</a> What it does?</h2> <p>The Workflow package provides a robust system for defining and executing structured procedures based on the <a href="https://en.wikipedia.org/wiki/Workflow_pattern" target="_blank" rel="noopener noreferrer">workflow pattern<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>. It enables to organize complex logic into a series of interconnected, independent jobs that can be executed in a controlled manner.</p> <p>By breaking down monolithic procedures into modular workflow jobs, developers gain several advantages:</p> <ul><li>Improved testability of individual components</li> <li>Better code organization and maintainability</li> <li>Reusable job definitions across different workflows</li> <li>Clear visualization of process flows</li> <li>Flexible execution patterns (sync/async)</li></ul> <div class="custom-block tip"><p class="custom-block-title">💡 Workflow introduction</p> <p>Read <a href="https://rodolfoberrios.com/2022/04/09/workflow-php/" target="_blank" rel="noopener noreferrer">Workflow for PHP<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> at Rodolfo's blog for a compressive introduction to this package.</p></div> <h2 id="how-to-use"><a href="#how-to-use" class="header-anchor">#</a> How to use</h2> <p>The Workflow package provides a set of core functions in the <code>Chevere\Workflow</code> namespace that allow you to build and manage workflow processes. These functions work together to create flexible, maintainable workflow definitions.</p> <h3 id="functions"><a href="#functions" class="header-anchor">#</a> Functions</h3> <table><thead><tr><th>Function</th> <th style="text-align:left;">Purpose</th></tr></thead> <tbody><tr><td>workflow</td> <td style="text-align:left;">Creates a new workflow container for organizing named jobs</td></tr> <tr><td>sync</td> <td style="text-align:left;">Defines a synchronous job that blocks until completion</td></tr> <tr><td>async</td> <td style="text-align:left;">Defines an asynchronous job that runs non-blocking</td></tr> <tr><td>variable</td> <td style="text-align:left;">Declares a workflow-level variable for job inputs</td></tr> <tr><td>response</td> <td style="text-align:left;">Creates a reference to access previous job outputs</td></tr></tbody></table> <h3 id="key-concepts"><a href="#key-concepts" class="header-anchor">#</a> Key concepts</h3> <ul><li><a href="#job">Job</a>: Self-contained unit of work defined by <a href="https://chevere.org/packages/action" target="_blank" rel="noopener noreferrer">Action<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="#variable">Variable</a>: Shared workflow-level inputs accessed by multiple jobs</li> <li><a href="#response">Response</a>: Links between job outputs (<code>response()</code>) and inputs</li></ul> <h2 id="workflow-example"><a href="#workflow-example" class="header-anchor">#</a> Workflow example</h2> <p><code>php demo/chevere.php</code></p> <p>Create <code>MyAction</code> action by extending <code>Chevere\Action\Action</code>. You can also <code>use ActionTrait</code>.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>Action<span class="token punctuation">\</span>Action</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">MyAction</span> <span class="token keyword">extends</span> <span class="token class-name">Action</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">protected</span> <span class="token keyword">function</span> <span class="token function-definition function">main</span><span class="token punctuation">(</span><span class="token keyword type-hint">string</span> <span class="token variable">$foo</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">string</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token string double-quoted-string">&quot;Hello, <span class="token interpolation"><span class="token punctuation">{</span><span class="token variable">$foo</span><span class="token punctuation">}</span></span>&quot;</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Create Workflow with your <code>MyAction</code> Job:</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token package">function</span> Chevere\Workflow\<span class="token punctuation">{</span>workflow<span class="token punctuation">,</span>sync<span class="token punctuation">,</span>variable<span class="token punctuation">,</span>response<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token variable">$workflow</span> <span class="token operator">=</span> <span class="token function">workflow</span><span class="token punctuation">(</span>
+    <span class="token argument-name">greet</span><span class="token punctuation">:</span> <span class="token function">sync</span><span class="token punctuation">(</span>
+        <span class="token keyword">new</span> <span class="token class-name">MyAction</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token argument-name">foo</span><span class="token punctuation">:</span> <span class="token function">variable</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'super'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token argument-name">capo</span><span class="token punctuation">:</span> <span class="token function">sync</span><span class="token punctuation">(</span>
+        <span class="token keyword">new</span> <span class="token class-name">MyAction</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token argument-name">foo</span><span class="token punctuation">:</span> <span class="token function">response</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'greet'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>Run the Workflow:</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>Workflow<span class="token punctuation">\</span>run</span><span class="token punctuation">;</span>
+
+<span class="token variable">$hello</span> <span class="token operator">=</span> <span class="token function">run</span><span class="token punctuation">(</span>
+    <span class="token variable">$workflow</span><span class="token punctuation">,</span>
+    <span class="token argument-name">super</span><span class="token punctuation">:</span> <span class="token string single-quoted-string">'Chevere'</span><span class="token punctuation">,</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">echo</span> <span class="token variable">$hello</span><span class="token operator">-&gt;</span><span class="token function">response</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'greet'</span><span class="token punctuation">)</span><span class="token operator">-&gt;</span><span class="token keyword type-declaration">string</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">.</span> <span class="token constant">PHP_EOL</span><span class="token punctuation">;</span>
+<span class="token comment">// Hello, Chevere</span>
+<span class="token keyword">echo</span> <span class="token variable">$hello</span><span class="token operator">-&gt;</span><span class="token function">response</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'capo'</span><span class="token punctuation">)</span><span class="token operator">-&gt;</span><span class="token keyword type-declaration">string</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">.</span> <span class="token constant">PHP_EOL</span><span class="token punctuation">;</span>
+<span class="token comment">// Hello, Hello, Chevere</span>
+</code></pre></div><h2 id="variable"><a href="#variable" class="header-anchor">#</a> Variable</h2> <p>Use function <code>variable</code> to declare a Workflow variable that will be injected when running the workflow. Variables allow you to pass external values into your workflow jobs during execution.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>Workflow<span class="token punctuation">\</span>variable</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Basic variable declaration</span>
+<span class="token function">variable</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'myVar'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Usage in a job</span>
+<span class="token function">sync</span><span class="token punctuation">(</span>
+    <span class="token keyword">new</span> <span class="token class-name">MyAction</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token argument-name">parameter</span><span class="token punctuation">:</span> <span class="token function">variable</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'myVar'</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>When running the workflow, you must provide values for all declared variables:</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>Workflow<span class="token punctuation">\</span>run</span><span class="token punctuation">;</span>
+
+<span class="token function">run</span><span class="token punctuation">(</span><span class="token variable">$workflow</span><span class="token punctuation">,</span> <span class="token argument-name">myVar</span><span class="token punctuation">:</span> <span class="token string single-quoted-string">'some value'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="response"><a href="#response" class="header-anchor">#</a> Response</h2> <p>Use function <code>response</code> to declare a reference to a response returned by a previous Job. This allows you to chain job outputs as inputs to subsequent jobs.</p> <p>🪄 When using a response it will <strong>auto declare</strong> the referenced Job as a <a href="#dependencies">dependency</a>, ensuring proper execution order.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>Workflow<span class="token punctuation">\</span>response</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Basic response declaration</span>
+<span class="token function">response</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'job1'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Usage in a Workflow</span>
+<span class="token function">workflow</span><span class="token punctuation">(</span>
+    <span class="token argument-name">job1</span><span class="token punctuation">:</span> <span class="token function">sync</span><span class="token punctuation">(</span>
+        <span class="token keyword">new</span> <span class="token class-name">SomeAction</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token argument-name">job2</span><span class="token punctuation">:</span> <span class="token function">sync</span><span class="token punctuation">(</span>
+        <span class="token keyword">new</span> <span class="token class-name">MyAction</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token argument-name">parameter</span><span class="token punctuation">:</span> <span class="token function">response</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'job1'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>References can be also made on a response member identified by <code>key</code>.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>Workflow<span class="token punctuation">\</span>response</span><span class="token punctuation">;</span>
+
+<span class="token function">response</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'job1'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'id'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="job"><a href="#job" class="header-anchor">#</a> Job</h2> <p>The <code>Job</code> class defines an <a href="https://chevere.org/packages/action" target="_blank" rel="noopener noreferrer">Action<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> that can be executed as part of a workflow.</p> <h3 id="arguments"><a href="#arguments" class="header-anchor">#</a> Arguments</h3> <p>Job arguments can be passed in three ways:</p> <ul><li><strong>As-is values</strong>: Direct values passed to the Action</li> <li><strong>Variables</strong>: Workflow-level inputs declared using the <code>variable</code> function</li> <li><strong>Responses</strong>: References to previous job outputs declared using the <code>response</code> function</li></ul> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">class</span> <span class="token class-name-definition class-name">SomeAction</span> <span class="token keyword">extends</span> <span class="token class-name">Action</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">protected</span> <span class="token keyword">function</span> <span class="token function-definition function">main</span><span class="token punctuation">(</span>
+        <span class="token keyword type-hint">string</span> <span class="token variable">$context</span><span class="token punctuation">,</span>
+        <span class="token keyword type-hint">int</span> <span class="token variable">$userId</span><span class="token punctuation">,</span>
+        <span class="token keyword type-declaration">mixed</span> <span class="token operator">...</span><span class="token variable">$bag</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">void</span>
+    <span class="token punctuation">{</span>
+        <span class="token comment">// On runtime:</span>
+        <span class="token comment">// $context = 'public'</span>
+        <span class="token comment">// $userId = (( user.id response ))</span>
+        <span class="token comment">// $bag = ['group' =&gt; 'admin', 'mask' =&gt; 1024]</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token variable">$workflow</span> <span class="token operator">=</span> <span class="token function">workflow</span><span class="token punctuation">(</span>
+    <span class="token argument-name">user</span><span class="token punctuation">:</span> <span class="token function">sync</span><span class="token punctuation">(</span>
+        <span class="token keyword">new</span> <span class="token class-name">GetUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token argument-name">request</span><span class="token punctuation">:</span> <span class="token function">variable</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'userId'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token argument-name">job1</span><span class="token punctuation">:</span> <span class="token function">sync</span><span class="token punctuation">(</span>
+        <span class="token keyword">new</span> <span class="token class-name">SomeAction</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token argument-name">context</span><span class="token punctuation">:</span> <span class="token string single-quoted-string">'public'</span><span class="token punctuation">,</span>               <span class="token comment">// As-is value</span>
+        userId<span class="token punctuation">:</span> <span class="token function">variable</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'userId'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>      <span class="token comment">// Variable</span>
+        group<span class="token punctuation">:</span> <span class="token function">response</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'user'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'group'</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token comment">// Response</span>
+        mask<span class="token punctuation">:</span> <span class="token number">1024</span><span class="token punctuation">,</span>                      <span class="token comment">// As-is value</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">run</span><span class="token punctuation">(</span><span class="token variable">$workflow</span><span class="token punctuation">,</span> <span class="token argument-name">userId</span><span class="token punctuation">:</span> <span class="token number">123</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>In the example above:</p> <ul><li>The <code>context</code> argument is passed as-is with the value <code>public</code>.</li> <li>The <code>userId</code> argument is dynamically provided as a variable.</li> <li>The <code>group</code> argument is dynamically provided as a response from a previous job.</li> <li>The <code>mask</code> argument is passed as-is with the value <code>1024</code>.</li></ul> <p>When running the Workflow, these arguments will be matched against the parameters defined in the <a href="https://chevere.org/packages/action.html#main-method" target="_blank" rel="noopener noreferrer">main method<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> of <code>SomeAction</code>.</p> <h3 id="asynchronous"><a href="#asynchronous" class="header-anchor">#</a> Asynchronous</h3> <p>Use function <code>async</code> to create an asynchronous job, which runs non-blocking.</p> <p><strong>Important:</strong> When using <code>async</code> jobs, your Actions must support <a href="https://www.php.net/manual/en/function.serialize.php" target="_blank" rel="noopener noreferrer">serialization<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>. For Actions that work with non-serializable resources like:</p> <ul><li>Database connections</li> <li>File handles</li> <li>Stream resources</li> <li>Network sockets</li></ul> <p>You must use <code>sync</code> jobs instead.</p> <p>In the example below a Workflow describes an image creation procedure for multiple image sizes.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token package">function</span> Chevere\Workflow\<span class="token punctuation">{</span>sync<span class="token punctuation">,</span>async<span class="token punctuation">,</span>response<span class="token punctuation">,</span>variable<span class="token punctuation">,</span>workflow<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token function">workflow</span><span class="token punctuation">(</span>
+    <span class="token argument-name">thumb</span><span class="token punctuation">:</span> <span class="token function">async</span><span class="token punctuation">(</span>
+        <span class="token keyword">new</span> <span class="token class-name">ImageResize</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token argument-name">image</span><span class="token punctuation">:</span> <span class="token function">variable</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'image'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token argument-name">width</span><span class="token punctuation">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+        <span class="token argument-name">height</span><span class="token punctuation">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+        <span class="token argument-name">fit</span><span class="token punctuation">:</span> <span class="token string single-quoted-string">'thumb'</span>
+    <span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token argument-name">medium</span><span class="token punctuation">:</span> <span class="token function">async</span><span class="token punctuation">(</span>
+        <span class="token keyword">new</span> <span class="token class-name">ImageResize</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token argument-name">image</span><span class="token punctuation">:</span> <span class="token function">variable</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'image'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token argument-name">width</span><span class="token punctuation">:</span> <span class="token number">500</span><span class="token punctuation">,</span>
+        <span class="token argument-name">fit</span><span class="token punctuation">:</span> <span class="token string single-quoted-string">'resizeByW'</span>
+    <span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token argument-name">store</span><span class="token punctuation">:</span> <span class="token function">sync</span><span class="token punctuation">(</span>
+        <span class="token keyword">new</span> <span class="token class-name">StoreFiles</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token function">response</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'thumb'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'filename'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token function">response</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'medium'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'filename'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li><code>variable('image')</code> declares a <a href="#variable">Variable</a>.</li> <li><code>response('thumb', 'filename')</code> and <code>response('medium', 'filename')</code> declares a <a href="#response">Response</a> reference.</li></ul> <p>The graph for this Workflow says that <code>thumb</code>, <code>medium</code> and <code>poster</code> run non-blocking in parallel. Job <code>store</code> runs blocking (another node).</p> <div class="language-mermaid extra-class"><pre class="language-mermaid"><code><span class="token keyword">graph</span> TD<span class="token punctuation">;</span>
+    thumb<span class="token arrow operator">--&gt;</span>store<span class="token punctuation">;</span>
+    medium<span class="token arrow operator">--&gt;</span>store<span class="token punctuation">;</span>
+    poster<span class="token arrow operator">--&gt;</span>store<span class="token punctuation">;</span>
+</code></pre></div><div class="language-php extra-class"><pre class="language-php"><code><span class="token variable">$workflow</span><span class="token operator">-&gt;</span><span class="token function">jobs</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-&gt;</span><span class="token function">graph</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-&gt;</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// contains</span>
+<span class="token punctuation">[</span>
+    <span class="token punctuation">[</span><span class="token string single-quoted-string">'thumb'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'medium'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'poster'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token string single-quoted-string">'store'</span><span class="token punctuation">]</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre></div><p>To complete the example, here's how to <a href="#running">Run</a> the Workflow previously defined:</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>Workflow<span class="token punctuation">\</span>run</span><span class="token punctuation">;</span>
+
+<span class="token function">run</span><span class="token punctuation">(</span>
+    <span class="token argument-name">workflow</span><span class="token punctuation">:</span> <span class="token variable">$workflow</span><span class="token punctuation">,</span>
+    <span class="token argument-name">arguments</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token string single-quoted-string">'image'</span> <span class="token operator">=&gt;</span> <span class="token string single-quoted-string">'/path/to/file'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="synchronous"><a href="#synchronous" class="header-anchor">#</a> Synchronous</h3> <p>Use function <code>sync</code> to create a synchronous job, which block execution until it gets resolved.</p> <p>In the example below a Workflow describes an image uploading procedure.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token package">function</span> Chevere\Workflow\<span class="token punctuation">{</span>sync<span class="token punctuation">,</span>response<span class="token punctuation">,</span>variable<span class="token punctuation">,</span>workflow<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token function">workflow</span><span class="token punctuation">(</span>
+    <span class="token argument-name">user</span><span class="token punctuation">:</span> <span class="token function">sync</span><span class="token punctuation">(</span>
+        <span class="token keyword">new</span> <span class="token class-name">GetUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token argument-name">request</span><span class="token punctuation">:</span> <span class="token function">variable</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'payload'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token argument-name">validate</span><span class="token punctuation">:</span> <span class="token function">sync</span><span class="token punctuation">(</span>
+        <span class="token keyword">new</span> <span class="token class-name">ValidateImage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token argument-name">mime</span><span class="token punctuation">:</span> <span class="token string single-quoted-string">'image/png'</span><span class="token punctuation">,</span>
+        <span class="token argument-name">file</span><span class="token punctuation">:</span> <span class="token function">variable</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'file'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token argument-name">meta</span><span class="token punctuation">:</span> <span class="token function">sync</span><span class="token punctuation">(</span>
+        <span class="token keyword">new</span> <span class="token class-name">GetMeta</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token argument-name">file</span><span class="token punctuation">:</span> <span class="token function">variable</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'file'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token argument-name">store</span><span class="token punctuation">:</span> <span class="token function">sync</span><span class="token punctuation">(</span>
+        <span class="token keyword">new</span> <span class="token class-name">StoreFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token argument-name">file</span><span class="token punctuation">:</span> <span class="token function">variable</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'file'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token argument-name">name</span><span class="token punctuation">:</span> <span class="token function">response</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'meta'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'name'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token argument-name">user</span><span class="token punctuation">:</span> <span class="token function">response</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'user'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li><code>variable('payload')</code> and <code>variable('file')</code> declares a <a href="#variable">Variable</a>.</li> <li><code>response('meta', 'name')</code> and <code>response('user')</code> declares a <a href="#response">Response</a> reference.</li></ul> <p>The graph for this Workflow says that all jobs run one after each other as all jobs are defined using <code>sync</code>.</p> <div class="language-mermaid extra-class"><pre class="language-mermaid"><code><span class="token keyword">graph</span> TD<span class="token punctuation">;</span>
+    user<span class="token arrow operator">--&gt;</span>validate<span class="token arrow operator">--&gt;</span>meta<span class="token arrow operator">--&gt;</span>store<span class="token punctuation">;</span>
+</code></pre></div><div class="language-php extra-class"><pre class="language-php"><code><span class="token variable">$workflow</span><span class="token operator">-&gt;</span><span class="token function">jobs</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-&gt;</span><span class="token function">graph</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-&gt;</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// contains</span>
+<span class="token punctuation">[</span>
+    <span class="token punctuation">[</span><span class="token string single-quoted-string">'user'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token string single-quoted-string">'validate'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token string single-quoted-string">'meta'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token string single-quoted-string">'store'</span><span class="token punctuation">]</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre></div><p>To complete the example, here's how to <a href="#running">Run</a> the Workflow previously defined:</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>Workflow<span class="token punctuation">\</span>run</span><span class="token punctuation">;</span>
+
+<span class="token function">run</span><span class="token punctuation">(</span>
+    <span class="token variable">$workflow</span><span class="token punctuation">,</span>
+    <span class="token argument-name">payload</span><span class="token punctuation">:</span> <span class="token variable">$_REQUEST</span><span class="token punctuation">,</span>
+    <span class="token argument-name">file</span><span class="token punctuation">:</span> <span class="token string single-quoted-string">'/path/to/file'</span><span class="token punctuation">,</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="conditional-running"><a href="#conditional-running" class="header-anchor">#</a> Conditional running</h3> <p>Method <code>withRunIf</code> enables to pass arguments of type <a href="#variable">Variable</a> or <a href="#response">Response</a> for conditionally running a Job.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token function">sync</span><span class="token punctuation">(</span>
+    <span class="token keyword">new</span> <span class="token class-name">CompressImage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token argument-name">file</span><span class="token punctuation">:</span> <span class="token function">variable</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'file'</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span>
+    <span class="token operator">-&gt;</span><span class="token function">withRunIf</span><span class="token punctuation">(</span>
+        <span class="token function">variable</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'compressImage'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token function">response</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'SomeAction'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'doImageCompress'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">)</span>
+</code></pre></div><p>For the code above, all conditions must meet to run the Job and both variable <code>compressImage</code> and the reference <code>SomeAction:doImageCompress</code> must be <code>true</code> to run the job.</p> <h3 id="dependencies"><a href="#dependencies" class="header-anchor">#</a> Dependencies</h3> <p>Use <code>withDepends</code> method to explicit declare previous jobs as dependencies. The dependent Job won't run until the dependencies are resolved.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token function">job</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">SomeAction</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token operator">-&gt;</span><span class="token function">withDepends</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'myJob'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="running"><a href="#running" class="header-anchor">#</a> Running</h2> <p>To run a Workflow use the <code>run</code> function by passing a Workflow and its variables (if any).</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>Workflow<span class="token punctuation">\</span>run</span><span class="token punctuation">;</span>
+
+<span class="token variable">$run</span> <span class="token operator">=</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token variable">$workflow</span><span class="token punctuation">,</span> <span class="token operator">...</span><span class="token variable">$variables</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="access-job-response"><a href="#access-job-response" class="header-anchor">#</a> Access Job response</h3> <p>Use <code>response</code> to retrieve a job response as a <code>CastArgument</code> object which can be used to get a typed response.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token variable">$thumbFile</span> <span class="token operator">=</span> <span class="token variable">$run</span><span class="token operator">-&gt;</span><span class="token function">response</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'thumb'</span><span class="token punctuation">)</span><span class="token operator">-&gt;</span><span class="token keyword type-declaration">string</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>🪄 If the response is of type <code>array|ArrayAccess</code> you can shortcut key access casting.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>Parameter<span class="token punctuation">\</span>cast</span><span class="token punctuation">;</span>
+
+<span class="token variable">$id</span> <span class="token operator">=</span> <span class="token variable">$run</span><span class="token operator">-&gt;</span><span class="token function">response</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'user'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'id'</span><span class="token punctuation">)</span><span class="token operator">-&gt;</span><span class="token keyword type-declaration">int</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="workflowtrait"><a href="#workflowtrait" class="header-anchor">#</a> WorkflowTrait</h3> <p>The <code>WorkflowTrait</code> provides methods <code>execute</code>  and <code>run</code> for easing handling a Workflow within a class.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>Workflow<span class="token punctuation">\</span>WorkflowTrait</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">Something</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">use</span> <span class="token package">WorkflowTrait</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">__construct</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token variable">$workflow</span> <span class="token operator">=</span> <span class="token function">workflow</span><span class="token punctuation">(</span>
+            <span class="token argument-name">job1</span><span class="token punctuation">:</span> <span class="token function">sync</span><span class="token punctuation">(</span>
+                <span class="token keyword">new</span> <span class="token class-name">MyAction</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                <span class="token argument-name">foo</span><span class="token punctuation">:</span> <span class="token function">variable</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'bar'</span><span class="token punctuation">)</span>
+            <span class="token punctuation">)</span>
+        <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// Use execute to run the Workflow</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token function">execute</span><span class="token punctuation">(</span><span class="token variable">$workflow</span><span class="token punctuation">,</span> <span class="token argument-name">bar</span><span class="token punctuation">:</span> <span class="token string single-quoted-string">'baz'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token variable">$some</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Something</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$bar</span> <span class="token operator">=</span> <span class="token variable">$some</span><span class="token operator">-&gt;</span><span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-&gt;</span><span class="token function">response</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'job1'</span><span class="token punctuation">)</span><span class="token operator">-&gt;</span><span class="token keyword type-declaration">string</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="exception-handling"><a href="#exception-handling" class="header-anchor">#</a> Exception handling</h3> <p>When running a Workflow, if a Job fails a <code>WorkflowException</code> will be thrown. This is an exception wrapper for the job that thrown the exception.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">try</span> <span class="token punctuation">{</span>
+    <span class="token variable">$run</span> <span class="token operator">=</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token variable">$workflow</span><span class="token punctuation">,</span> <span class="token operator">...</span><span class="token variable">$variables</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">WorkflowException</span> <span class="token variable">$e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Job that thrown the exception</span>
+    <span class="token variable">$e</span><span class="token operator">-&gt;</span><span class="token property">name</span><span class="token punctuation">;</span>
+    <span class="token comment">// Job instance that thrown the exception</span>
+    <span class="token variable">$e</span><span class="token operator">-&gt;</span><span class="token property">job</span><span class="token punctuation">;</span>
+    <span class="token comment">// The exception thrown by the Job</span>
+    <span class="token variable">$e</span><span class="token operator">-&gt;</span><span class="token property">throwable</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// If using WorkflowTrait</span>
+<span class="token keyword">try</span> <span class="token punctuation">{</span>
+    <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token function">execute</span><span class="token punctuation">(</span><span class="token variable">$workflow</span><span class="token punctuation">,</span> <span class="token operator">...</span><span class="token variable">$variables</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token variable">$run</span> <span class="token operator">=</span> <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">WorkflowException</span> <span class="token variable">$e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="demo"><a href="#demo" class="header-anchor">#</a> Demo</h2> <p>See the <a href="https://github.com/chevere/workflow/tree/1.0/demo" target="_blank" rel="noopener noreferrer">demo<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> directory for a set of examples.</p> <h2 id="testing"><a href="#testing" class="header-anchor">#</a> Testing</h2> <p>Workflow provides several approaches for testing your implementations. While the Workflow itself doesn't need testing (it's a configuration), you should test:</p> <ol><li>Job actions (unit tests)</li> <li>Workflow execution order (graph)</li> <li>Job responses</li> <li>Exception handling</li></ol> <h3 id="testing-job-actions"><a href="#testing-job-actions" class="header-anchor">#</a> Testing Job Actions</h3> <p>The primary testing focus should be on your Action implementations:</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token package">PHPUnit<span class="token punctuation">\</span>Framework<span class="token punctuation">\</span>TestCase</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">MyActionTest</span> <span class="token keyword">extends</span> <span class="token class-name">TestCase</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">testAction</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">void</span>
+    <span class="token punctuation">{</span>
+        <span class="token variable">$action</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">MyAction</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 🪄 Chevere automatically validates Action I/O</span>
+        <span class="token variable">$response</span> <span class="token operator">=</span> <span class="token variable">$action</span><span class="token punctuation">(</span><span class="token argument-name">foo</span><span class="token punctuation">:</span> <span class="token string single-quoted-string">'bar'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token function">assertSame</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'expected'</span><span class="token punctuation">,</span> <span class="token variable">$response</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="testing-workflow-graph"><a href="#testing-workflow-graph" class="header-anchor">#</a> Testing Workflow Graph</h3> <p>Verify the execution order by testing the Workflow graph:</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">testWorkflowOrder</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">void</span>
+<span class="token punctuation">{</span>
+    <span class="token variable">$expectedGraph</span> <span class="token operator">=</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">[</span><span class="token string single-quoted-string">'job1'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'job2'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// parallel jobs</span>
+        <span class="token punctuation">[</span><span class="token string single-quoted-string">'job3'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>         <span class="token comment">// depends on job1, job2</span>
+    <span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token function">assertSame</span><span class="token punctuation">(</span>
+        <span class="token variable">$expectedGraph</span><span class="token punctuation">,</span>
+        <span class="token variable">$workflow</span><span class="token operator">-&gt;</span><span class="token function">jobs</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-&gt;</span><span class="token function">graph</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-&gt;</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="testing-job-responses"><a href="#testing-job-responses" class="header-anchor">#</a> Testing Job Responses</h3> <p>Test how jobs interact by checking their responses:</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">testJobResponses</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">void</span>
+<span class="token punctuation">{</span>
+    <span class="token variable">$run</span> <span class="token operator">=</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token variable">$workflow</span><span class="token punctuation">,</span> <span class="token argument-name">input</span><span class="token punctuation">:</span> <span class="token string single-quoted-string">'test'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// Access typed responses</span>
+    <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token function">assertSame</span><span class="token punctuation">(</span>
+        <span class="token number">123</span><span class="token punctuation">,</span>
+        <span class="token variable">$run</span><span class="token operator">-&gt;</span><span class="token function">response</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'job1'</span><span class="token punctuation">)</span><span class="token operator">-&gt;</span><span class="token keyword type-declaration">int</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token function">assertSame</span><span class="token punctuation">(</span>
+        <span class="token string single-quoted-string">'test'</span><span class="token punctuation">,</span>
+        <span class="token variable">$run</span><span class="token operator">-&gt;</span><span class="token function">response</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'job2'</span><span class="token punctuation">)</span><span class="token operator">-&gt;</span><span class="token keyword type-declaration">string</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// Access array responses</span>
+    <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token function">assertSame</span><span class="token punctuation">(</span>
+        <span class="token number">10.2</span><span class="token punctuation">,</span>
+        <span class="token variable">$run</span><span class="token operator">-&gt;</span><span class="token function">response</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'job3'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'rate'</span><span class="token punctuation">)</span><span class="token operator">-&gt;</span><span class="token keyword type-declaration">float</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="testing-exception-handling"><a href="#testing-exception-handling" class="header-anchor">#</a> Testing Exception Handling</h3> <p>Use <code>ExpectWorkflowExceptionTrait</code> to test error scenarios:</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>Workflow<span class="token punctuation">\</span>Traits<span class="token punctuation">\</span>ExpectWorkflowExceptionTrait</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>Workflow<span class="token punctuation">\</span>run</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">WorkflowTest</span> <span class="token keyword">extends</span> <span class="token class-name">TestCase</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">use</span> <span class="token package">ExpectWorkflowExceptionTrait</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">testFailingJob</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">void</span>
+    <span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token function">expectWorkflowException</span><span class="token punctuation">(</span>
+            <span class="token argument-name">closure</span><span class="token punctuation">:</span> <span class="token keyword">fn</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token variable">$workflow</span><span class="token punctuation">,</span> <span class="token argument-name">input</span><span class="token punctuation">:</span> <span class="token string single-quoted-string">'invalid'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token argument-name">exception</span><span class="token punctuation">:</span> <span class="token class-name static-context">LogicException</span><span class="token operator">::</span><span class="token keyword">class</span><span class="token punctuation">,</span>
+            <span class="token argument-name">job</span><span class="token punctuation">:</span> <span class="token string single-quoted-string">'validation'</span><span class="token punctuation">,</span>
+            <span class="token argument-name">message</span><span class="token punctuation">:</span> <span class="token string single-quoted-string">'Invalid input'</span>
+        <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="architecture"><a href="#architecture" class="header-anchor">#</a> Architecture</h2> <p>The architecture of the Workflow package is designed to provide a clear separation of concerns, making it easier to define, manage, and execute workflows. The following diagram illustrates the core components and their interactions:</p> <div class="language-mermaid extra-class"><pre class="language-mermaid"><code><span class="token keyword">graph</span> TD
+    <span class="token keyword">subgraph</span> Client Application
+        WF<span class="token text string">[Workflow Definition]</span>
+        Run<span class="token text string">[run Function]</span>
+    <span class="token keyword">end</span>
+
+    <span class="token keyword">subgraph</span> Core Components
+        Jobs<span class="token text string">[Jobs]</span>
+        Graph<span class="token text string">[Graph]</span>
+        Job<span class="token text string">[Job]</span>
+        Action<span class="token text string">[Action]</span>
+    <span class="token keyword">end</span>
+
+    <span class="token keyword">subgraph</span> References
+        Var<span class="token text string">[Variables]</span>
+        Resp<span class="token text string">[Responses]</span>
+    <span class="token keyword">end</span>
+
+    <span class="token keyword">subgraph</span> Execution
+        Runner<span class="token text string">[Workflow Runner]</span>
+        Sync<span class="token text string">[Sync Executor]</span>
+        Async<span class="token text string">[Async Executor]</span>
+    <span class="token keyword">end</span>
+
+    WF <span class="token arrow operator">--&gt;</span> Jobs
+    Jobs <span class="token arrow operator">--&gt;</span> <span class="token label property">|define|</span> Graph
+    Jobs <span class="token arrow operator">--&gt;</span> <span class="token label property">|manages|</span> Job
+    Job <span class="token arrow operator">--&gt;</span> <span class="token label property">|executes|</span> Action
+    Job <span class="token arrow operator">--&gt;</span> <span class="token label property">|depends on|</span> Var
+    Job <span class="token arrow operator">--&gt;</span> <span class="token label property">|depends on|</span> Resp
+    Run <span class="token arrow operator">--&gt;</span> Runner
+    Runner <span class="token arrow operator">--&gt;</span> <span class="token label property">|uses|</span> Jobs
+    Runner <span class="token arrow operator">--&gt;</span> <span class="token label property">|resolves|</span> Graph
+    Runner <span class="token arrow operator">--&gt;</span> <span class="token label property">|executes via|</span> Sync
+    Runner <span class="token arrow operator">--&gt;</span> <span class="token label property">|executes via|</span> Async
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/chevere/docs/edit/main/packages/workflow.md" target="_blank" rel="noopener noreferrer">Edit this page</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.cd076812.js" defer></script><script src="/assets/js/2.b3d98ebb.js" defer></script><script src="/assets/js/1.cbf95cfe.js" defer></script><script src="/assets/js/51.4dc3ee52.js" defer></script>
+  </body>
+</html>
