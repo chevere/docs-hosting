@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Http | Chevere</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/logo.png">
+    <link rel="apple-touch-icon" href="/logo.png">
+    <meta name="description" content="High quality library for building server-side software">
+    <meta property="og:site_name" content="Chevere">
+    <meta property="og:title" content="Http">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/packages/http.html">
+    <meta name="twitter:title" content="Http">
+    <meta name="twitter:url" content="/packages/http.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preload" href="/assets/css/0.styles.0f7b7e19.css" as="style"><link rel="preload" href="/assets/js/app.d34653bd.js" as="script"><link rel="preload" href="/assets/js/2.b3d98ebb.js" as="script"><link rel="preload" href="/assets/js/1.cbf95cfe.js" as="script"><link rel="preload" href="/assets/js/40.17367ac9.js" as="script"><link rel="prefetch" href="/assets/js/10.ce1ffa88.js"><link rel="prefetch" href="/assets/js/11.19c30390.js"><link rel="prefetch" href="/assets/js/12.63244053.js"><link rel="prefetch" href="/assets/js/13.7278834f.js"><link rel="prefetch" href="/assets/js/14.ddbbd723.js"><link rel="prefetch" href="/assets/js/15.951b87f8.js"><link rel="prefetch" href="/assets/js/16.22953f39.js"><link rel="prefetch" href="/assets/js/17.37cdd360.js"><link rel="prefetch" href="/assets/js/18.ac720a26.js"><link rel="prefetch" href="/assets/js/19.265c60db.js"><link rel="prefetch" href="/assets/js/20.b5e0f461.js"><link rel="prefetch" href="/assets/js/21.f8a5d0fc.js"><link rel="prefetch" href="/assets/js/22.c7db5a2e.js"><link rel="prefetch" href="/assets/js/23.a460b2d2.js"><link rel="prefetch" href="/assets/js/24.86dbe629.js"><link rel="prefetch" href="/assets/js/25.c73b6e9d.js"><link rel="prefetch" href="/assets/js/26.f000397d.js"><link rel="prefetch" href="/assets/js/27.b31a4070.js"><link rel="prefetch" href="/assets/js/28.496ebfd9.js"><link rel="prefetch" href="/assets/js/29.05fbe802.js"><link rel="prefetch" href="/assets/js/3.f1e808b9.js"><link rel="prefetch" href="/assets/js/30.71265950.js"><link rel="prefetch" href="/assets/js/31.e70afbfe.js"><link rel="prefetch" href="/assets/js/32.cfb0ea4f.js"><link rel="prefetch" href="/assets/js/33.1a8363dd.js"><link rel="prefetch" href="/assets/js/34.fffa1c28.js"><link rel="prefetch" href="/assets/js/35.34dbf8b8.js"><link rel="prefetch" href="/assets/js/36.7dadbdad.js"><link rel="prefetch" href="/assets/js/37.04acf26c.js"><link rel="prefetch" href="/assets/js/38.445c0cf6.js"><link rel="prefetch" href="/assets/js/39.8f93d2ef.js"><link rel="prefetch" href="/assets/js/4.17348ca1.js"><link rel="prefetch" href="/assets/js/41.84fecf3f.js"><link rel="prefetch" href="/assets/js/42.f05895a0.js"><link rel="prefetch" href="/assets/js/43.3f60a48f.js"><link rel="prefetch" href="/assets/js/44.bf84ff95.js"><link rel="prefetch" href="/assets/js/45.707dd8ea.js"><link rel="prefetch" href="/assets/js/46.e9f9b4e0.js"><link rel="prefetch" href="/assets/js/47.f72248a4.js"><link rel="prefetch" href="/assets/js/48.6d6f2739.js"><link rel="prefetch" href="/assets/js/49.26c317d9.js"><link rel="prefetch" href="/assets/js/5.e159fa16.js"><link rel="prefetch" href="/assets/js/50.fc323f0d.js"><link rel="prefetch" href="/assets/js/51.dff8e62e.js"><link rel="prefetch" href="/assets/js/52.78353147.js"><link rel="prefetch" href="/assets/js/53.b63a6e35.js"><link rel="prefetch" href="/assets/js/54.229b25c6.js"><link rel="prefetch" href="/assets/js/6.e3ac936f.js"><link rel="prefetch" href="/assets/js/7.8fcd73e7.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.92fa0d62.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0f7b7e19.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.svg" alt="Chevere" class="logo"> <span class="site-name can-hide">Chevere</span></a> <div class="links"><form id="search-form" role="search" class="algolia-search-wrapper search-box"><input id="algolia-search-input" class="search-query"></form> <nav class="nav-links can-hide"><div class="nav-item"><a href="/introduction/" class="nav-link">
+  Intro
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Packages Menu" class="dropdown-title"><span class="title">Packages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Packages Menu" class="mobile-dropdown-title"><span class="title">Packages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/packages/action.html" class="nav-link">
+  Action
+</a></li><li class="dropdown-item"><!----> <a href="/packages/container.html" class="nav-link">
+  Container
+</a></li><li class="dropdown-item"><!----> <a href="/packages/data-structure.html" class="nav-link">
+  DataStructure
+</a></li><li class="dropdown-item"><!----> <a href="/packages/filesystem.html" class="nav-link">
+  Filesystem
+</a></li><li class="dropdown-item"><!----> <a href="/packages/http.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Http
+</a></li><li class="dropdown-item"><!----> <a href="/packages/message.html" class="nav-link">
+  Message
+</a></li><li class="dropdown-item"><!----> <a href="/packages/parameter.html" class="nav-link">
+  Parameter
+</a></li><li class="dropdown-item"><!----> <a href="/packages/regex.html" class="nav-link">
+  Regex
+</a></li><li class="dropdown-item"><!----> <a href="/packages/router.html" class="nav-link">
+  Router
+</a></li><li class="dropdown-item"><!----> <a href="/packages/schwager.html" class="nav-link">
+  Schwager
+</a></li><li class="dropdown-item"><!----> <a href="/packages/sql2p.html" class="nav-link">
+  SQL2P
+</a></li><li class="dropdown-item"><!----> <a href="/packages/standard.html" class="nav-link">
+  Standard
+</a></li><li class="dropdown-item"><!----> <a href="/packages/throwable-handler.html" class="nav-link">
+  ThrowableHandler
+</a></li><li class="dropdown-item"><!----> <a href="/packages/trace.html" class="nav-link">
+  Trace
+</a></li><li class="dropdown-item"><!----> <a href="/packages/var-dump.html" class="nav-link">
+  VarDump
+</a></li><li class="dropdown-item"><!----> <a href="/packages/var-support.html" class="nav-link">
+  VarSupport
+</a></li><li class="dropdown-item"><!----> <a href="/packages/workflow.html" class="nav-link">
+  Workflow
+</a></li><li class="dropdown-item"><!----> <a href="/packages/writer.html" class="nav-link">
+  Writer
+</a></li><li class="dropdown-item"><!----> <a href="/packages/xrdebug.html" class="nav-link">
+  xrDebug
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Dev Menu" class="dropdown-title"><span class="title">Dev</span> <span class="arrow down"></span></button> <button type="button" aria-label="Dev Menu" class="mobile-dropdown-title"><span class="title">Dev</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Standard
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/standard/quality.html" class="nav-link">
+  Quality
+</a></li><li class="dropdown-subitem"><a href="/developer/standard/coding.html" class="nav-link">
+  Coding
+</a></li><li class="dropdown-subitem"><a href="/developer/standard/immutability.html" class="nav-link">
+  Immutability
+</a></li><li class="dropdown-subitem"><a href="/developer/standard/testing.html" class="nav-link">
+  Testing
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Spec
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/spec/interfaces.html" class="nav-link">
+  Interfaces
+</a></li><li class="dropdown-subitem"><a href="/developer/spec/components.html" class="nav-link">
+  Components
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Environment
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/environment/system.html" class="nav-link">
+  System
+</a></li><li class="dropdown-subitem"><a href="/developer/environment/workspace.html" class="nav-link">
+  Workspace
+</a></li></ul></li></ul></div></div> <a href="https://github.com/chevere/chevere" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/introduction/" class="nav-link">
+  Intro
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Packages Menu" class="dropdown-title"><span class="title">Packages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Packages Menu" class="mobile-dropdown-title"><span class="title">Packages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/packages/action.html" class="nav-link">
+  Action
+</a></li><li class="dropdown-item"><!----> <a href="/packages/container.html" class="nav-link">
+  Container
+</a></li><li class="dropdown-item"><!----> <a href="/packages/data-structure.html" class="nav-link">
+  DataStructure
+</a></li><li class="dropdown-item"><!----> <a href="/packages/filesystem.html" class="nav-link">
+  Filesystem
+</a></li><li class="dropdown-item"><!----> <a href="/packages/http.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Http
+</a></li><li class="dropdown-item"><!----> <a href="/packages/message.html" class="nav-link">
+  Message
+</a></li><li class="dropdown-item"><!----> <a href="/packages/parameter.html" class="nav-link">
+  Parameter
+</a></li><li class="dropdown-item"><!----> <a href="/packages/regex.html" class="nav-link">
+  Regex
+</a></li><li class="dropdown-item"><!----> <a href="/packages/router.html" class="nav-link">
+  Router
+</a></li><li class="dropdown-item"><!----> <a href="/packages/schwager.html" class="nav-link">
+  Schwager
+</a></li><li class="dropdown-item"><!----> <a href="/packages/sql2p.html" class="nav-link">
+  SQL2P
+</a></li><li class="dropdown-item"><!----> <a href="/packages/standard.html" class="nav-link">
+  Standard
+</a></li><li class="dropdown-item"><!----> <a href="/packages/throwable-handler.html" class="nav-link">
+  ThrowableHandler
+</a></li><li class="dropdown-item"><!----> <a href="/packages/trace.html" class="nav-link">
+  Trace
+</a></li><li class="dropdown-item"><!----> <a href="/packages/var-dump.html" class="nav-link">
+  VarDump
+</a></li><li class="dropdown-item"><!----> <a href="/packages/var-support.html" class="nav-link">
+  VarSupport
+</a></li><li class="dropdown-item"><!----> <a href="/packages/workflow.html" class="nav-link">
+  Workflow
+</a></li><li class="dropdown-item"><!----> <a href="/packages/writer.html" class="nav-link">
+  Writer
+</a></li><li class="dropdown-item"><!----> <a href="/packages/xrdebug.html" class="nav-link">
+  xrDebug
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Dev Menu" class="dropdown-title"><span class="title">Dev</span> <span class="arrow down"></span></button> <button type="button" aria-label="Dev Menu" class="mobile-dropdown-title"><span class="title">Dev</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Standard
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/standard/quality.html" class="nav-link">
+  Quality
+</a></li><li class="dropdown-subitem"><a href="/developer/standard/coding.html" class="nav-link">
+  Coding
+</a></li><li class="dropdown-subitem"><a href="/developer/standard/immutability.html" class="nav-link">
+  Immutability
+</a></li><li class="dropdown-subitem"><a href="/developer/standard/testing.html" class="nav-link">
+  Testing
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Spec
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/spec/interfaces.html" class="nav-link">
+  Interfaces
+</a></li><li class="dropdown-subitem"><a href="/developer/spec/components.html" class="nav-link">
+  Components
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Environment
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/environment/system.html" class="nav-link">
+  System
+</a></li><li class="dropdown-subitem"><a href="/developer/environment/workspace.html" class="nav-link">
+  Workspace
+</a></li></ul></li></ul></div></div> <a href="https://github.com/chevere/chevere" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Http</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/packages/http.html#summary" class="sidebar-link">Summary</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/packages/http.html#installing" class="sidebar-link">Installing</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/packages/http.html#controller" class="sidebar-link">Controller</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/packages/http.html#accept-headers" class="sidebar-link">Accept Headers</a></li><li class="sidebar-sub-header"><a href="/packages/http.html#accept-query" class="sidebar-link">Accept Query</a></li><li class="sidebar-sub-header"><a href="/packages/http.html#accept-body" class="sidebar-link">Accept Body</a></li><li class="sidebar-sub-header"><a href="/packages/http.html#accept-files" class="sidebar-link">Accept Files</a></li><li class="sidebar-sub-header"><a href="/packages/http.html#with-server-request" class="sidebar-link">With Server Request</a></li><li class="sidebar-sub-header"><a href="/packages/http.html#headers" class="sidebar-link">Headers</a></li><li class="sidebar-sub-header"><a href="/packages/http.html#query" class="sidebar-link">Query</a></li><li class="sidebar-sub-header"><a href="/packages/http.html#body" class="sidebar-link">Body</a></li><li class="sidebar-sub-header"><a href="/packages/http.html#files" class="sidebar-link">Files</a></li></ul></li><li><a href="/packages/http.html#middleware" class="sidebar-link">Middleware</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/packages/http.html#middleware-with-arguments" class="sidebar-link">Middleware with Arguments</a></li></ul></li><li><a href="/packages/http.html#attributes" class="sidebar-link">Attributes</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/packages/http.html#request" class="sidebar-link">Request</a></li><li class="sidebar-sub-header"><a href="/packages/http.html#response" class="sidebar-link">Response</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="http"><a href="#http" class="header-anchor">#</a> Http</h1> <h2 id="summary"><a href="#summary" class="header-anchor">#</a> Summary</h2> <p>Http is a library for creating HTTP components (Controller, Middleware, Header, Status) for <a href="https://chevere.org/packages/router" target="_blank" rel="noopener noreferrer">chevere/router<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>. It is compatible with the following <a href="https://www.php-fig.org" target="_blank" rel="noopener noreferrer">PHP-FIG<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> PSR:</p> <ul><li>PSR-7: HTTP message interfaces</li> <li>PSR-17: HTTP Factories</li> <li>PSR-18: HTTP Client</li></ul> <p>Read <a href="https://rodolfoberrios.com/2023/06/13/http/" target="_blank" rel="noopener noreferrer">Chevere Http<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> at Rodolfo's blog for a compressive introduction to this package.</p> <h2 id="installing"><a href="#installing" class="header-anchor">#</a> Installing</h2> <p>Http is available through <a href="https://packagist.org/packages/chevere/http" target="_blank" rel="noopener noreferrer">Packagist<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> and the repository source is at <a href="https://github.com/chevere/http" target="_blank" rel="noopener noreferrer">chevere/http<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">composer</span> require chevere/http
+</code></pre></div><h2 id="controller"><a href="#controller" class="header-anchor">#</a> Controller</h2> <p>The Controller in Http is a special Controller meant to be used in the context of HTTP requests. It extends <a href="https://chevere.org/packages/action" target="_blank" rel="noopener noreferrer">Action<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> by adding request <a href="https://chevere.org/packages/parameter" target="_blank" rel="noopener noreferrer">parameters<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> (query string, body, files) and attributes for statuses and headers.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>Http<span class="token punctuation">\</span>Controller</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">UsersPostController</span> <span class="token keyword">extends</span> <span class="token class-name">Controller</span>
+<span class="token punctuation">{</span>
+    <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="accept-headers"><a href="#accept-headers" class="header-anchor">#</a> Accept Headers</h3> <p>Define accepted parameters for headers using the <code>acceptHeaders</code> method.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>Parameter<span class="token punctuation">\</span>Interfaces<span class="token punctuation">\</span>ArrayStringParameterInterface</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>Parameter<span class="token punctuation">\</span>arrayString</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>Parameter<span class="token punctuation">\</span>parameters</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>Parameter<span class="token punctuation">\</span>string</span><span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">function</span> <span class="token function-definition function">acceptHeaders</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token class-name return-type">ArrayStringParameterInterface</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">arrayString</span><span class="token punctuation">(</span>
+        <span class="token operator">...</span><span class="token punctuation">[</span><span class="token string single-quoted-string">'Webhook-Id'</span> <span class="token operator">=&gt;</span> <span class="token keyword type-declaration">string</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="accept-query"><a href="#accept-query" class="header-anchor">#</a> Accept Query</h3> <p>Define accepted parameters for query string using the <code>acceptQuery</code> method.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>Parameter<span class="token punctuation">\</span>Interfaces<span class="token punctuation">\</span>ArrayStringParameterInterface</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>Parameter<span class="token punctuation">\</span>arrayString</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>Parameter<span class="token punctuation">\</span>parameters</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>Parameter<span class="token punctuation">\</span>string</span><span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">function</span> <span class="token function-definition function">acceptQuery</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token class-name return-type">ArrayStringParameterInterface</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">arrayString</span><span class="token punctuation">(</span>
+        <span class="token argument-name">foo</span><span class="token punctuation">:</span> <span class="token keyword type-declaration">string</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'/^[a-z]+$/'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="accept-body"><a href="#accept-body" class="header-anchor">#</a> Accept Body</h3> <p>Define accepted parameters for body using the <code>acceptBody</code> method.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>Parameter<span class="token punctuation">\</span>Interfaces<span class="token punctuation">\</span>ArrayParameterInterface</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>Parameter<span class="token punctuation">\</span>arrayp</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>Parameter<span class="token punctuation">\</span>parameters</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>Parameter<span class="token punctuation">\</span>string</span><span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">function</span> <span class="token function-definition function">acceptBody</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token class-name return-type">ArrayParameterInterface</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">arrayp</span><span class="token punctuation">(</span>
+        <span class="token argument-name">bar</span><span class="token punctuation">:</span> <span class="token keyword type-declaration">string</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'/^[1-9]+$/'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="accept-files"><a href="#accept-files" class="header-anchor">#</a> Accept Files</h3> <p>Define accepted parameters for FILES using the <code>acceptFiles</code> method.</p> <div class="language-php extra-class"><pre class="language-php"><code>
+<span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>Parameter<span class="token punctuation">\</span>Interfaces<span class="token punctuation">\</span>ArrayParameterInterface</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>Parameter<span class="token punctuation">\</span>arrayp</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>Parameter<span class="token punctuation">\</span>file</span><span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">function</span> <span class="token function-definition function">acceptFiles</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token class-name return-type">ArrayParameterInterface</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">arrayp</span><span class="token punctuation">(</span>
+        <span class="token argument-name">myFile</span><span class="token punctuation">:</span> <span class="token function">file</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="with-server-request"><a href="#with-server-request" class="header-anchor">#</a> With Server Request</h3> <p>Use method <code>withServerRequest</code> to inject a <a href="https://www.php-fig.org/psr/psr-7/#31-psrhttpmessageserverrequestinterface" target="_blank" rel="noopener noreferrer">PSR-7 ServerRequest<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> instance. This will assert the request against the defined <code>accept*</code> methods.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token package">Psr<span class="token punctuation">\</span>Http<span class="token punctuation">\</span>Message<span class="token punctuation">\</span>ServerRequestInterface</span><span class="token punctuation">;</span>
+
+<span class="token variable">$controller</span> <span class="token operator">=</span> <span class="token variable">$controller</span>
+    <span class="token operator">-&gt;</span><span class="token function">withServerRequest</span><span class="token punctuation">(</span><span class="token variable">$request</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="headers"><a href="#headers" class="header-anchor">#</a> Headers</h3> <p>Use method <code>headers</code> to read headers parameters.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token variable">$headers</span> <span class="token operator">=</span> <span class="token variable">$controller</span><span class="token operator">-&gt;</span><span class="token function">headers</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$header</span> <span class="token operator">=</span> <span class="token variable">$headers</span><span class="token operator">-&gt;</span><span class="token function">required</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'Webhook-Id'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="query"><a href="#query" class="header-anchor">#</a> Query</h3> <p>Use method <code>query</code> to read query parameters.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token variable">$query</span> <span class="token operator">=</span> <span class="token variable">$controller</span><span class="token operator">-&gt;</span><span class="token function">query</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$foo</span> <span class="token operator">=</span> <span class="token variable">$query</span><span class="token operator">-&gt;</span><span class="token function">required</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'foo'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="body"><a href="#body" class="header-anchor">#</a> Body</h3> <p>Use method <code>bodyParsed</code> to read the body parameters parsed.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token variable">$parsed</span> <span class="token operator">=</span> <span class="token variable">$controller</span><span class="token operator">-&gt;</span><span class="token function">bodyParsed</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$bar</span> <span class="token operator">=</span> <span class="token variable">$parsed</span><span class="token operator">-&gt;</span><span class="token function">required</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'bar'</span><span class="token punctuation">)</span><span class="token operator">-&gt;</span><span class="token keyword type-declaration">int</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>Use method <code>bodyStream</code> to return the body stream.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token variable">$stream</span> <span class="token operator">=</span> <span class="token variable">$controller</span><span class="token operator">-&gt;</span><span class="token function">bodyStream</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>Use method <code>body</code> to return the body casted.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token variable">$cast</span> <span class="token operator">=</span> <span class="token variable">$controller</span><span class="token operator">-&gt;</span><span class="token function">body</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="files"><a href="#files" class="header-anchor">#</a> Files</h3> <p>Use method <code>files</code> to read the files parameters.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token variable">$files</span> <span class="token operator">=</span> <span class="token variable">$controller</span><span class="token operator">-&gt;</span><span class="token function">files</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="middleware"><a href="#middleware" class="header-anchor">#</a> Middleware</h2> <p>Define <a href="https://www.php-fig.org/psr/psr-15/" target="_blank" rel="noopener noreferrer">PSR Middleware<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> collections using <code>middlewares</code> function.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>Http<span class="token punctuation">\</span>middlewares</span><span class="token punctuation">;</span>
+
+<span class="token variable">$middlewares</span> <span class="token operator">=</span> <span class="token function">middlewares</span><span class="token punctuation">(</span>
+    <span class="token class-name static-context">MiddlewareOne</span><span class="token operator">::</span><span class="token keyword">class</span><span class="token punctuation">,</span>
+    <span class="token class-name static-context">MiddlewareTwo</span><span class="token operator">::</span><span class="token keyword">class</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>Middleware priority goes from top to bottom, first in first out (FIFO).</p> <h3 id="middleware-with-arguments"><a href="#middleware-with-arguments" class="header-anchor">#</a> Middleware with Arguments</h3> <p>Use <code>MiddlewareNameWithArgumentsTrait</code> to define Middleware with arguments:</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>Http<span class="token punctuation">\</span>Interfaces<span class="token punctuation">\</span>MiddlewareNameInterface</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>Http<span class="token punctuation">\</span>Traits<span class="token punctuation">\</span>MiddlewareNameWithArgumentsTrait</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Nyholm<span class="token punctuation">\</span>Psr7<span class="token punctuation">\</span>Factory<span class="token punctuation">\</span>Psr17Factory</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Psr<span class="token punctuation">\</span>Http<span class="token punctuation">\</span>Message<span class="token punctuation">\</span>ResponseInterface</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Psr<span class="token punctuation">\</span>Http<span class="token punctuation">\</span>Message<span class="token punctuation">\</span>ServerRequestInterface</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Psr<span class="token punctuation">\</span>Http<span class="token punctuation">\</span>Server<span class="token punctuation">\</span>MiddlewareInterface</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">AllowListMiddleware</span> <span class="token keyword">implements</span> <span class="token class-name">MiddlewareInterface</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">use</span> <span class="token package">MiddlewareNameWithArgumentsTrait</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">private</span> <span class="token keyword type-declaration">string</span> <span class="token variable">$allowList</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">setUp</span><span class="token punctuation">(</span><span class="token keyword type-hint">string</span> <span class="token variable">$allowList</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">void</span>
+    <span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">allowList</span> <span class="token operator">=</span> <span class="token variable">$allowList</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">function</span> <span class="token function-definition function">with</span><span class="token punctuation">(</span><span class="token keyword type-hint">string</span> <span class="token variable">$allowList</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token class-name return-type">MiddlewareNameInterface</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword static-context">static</span><span class="token operator">::</span><span class="token function">middlewareName</span><span class="token punctuation">(</span><span class="token operator">...</span><span class="token function">get_defined_vars</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">process</span><span class="token punctuation">(</span>
+        <span class="token class-name type-declaration">ServerRequestInterface</span> <span class="token variable">$request</span><span class="token punctuation">,</span>
+        <span class="token class-name type-declaration">RequestHandlerInterface</span> <span class="token variable">$handler</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token class-name return-type">ResponseInterface</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">allowList</span> <span class="token operator">===</span> <span class="token string single-quoted-string">''</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token variable">$handler</span><span class="token operator">-&gt;</span><span class="token function">handle</span><span class="token punctuation">(</span><span class="token variable">$request</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token variable">$remoteAddress</span> <span class="token operator">=</span> <span class="token variable">$request</span><span class="token operator">-&gt;</span><span class="token function">getServerParams</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token string single-quoted-string">'REMOTE_ADDR'</span><span class="token punctuation">]</span> <span class="token operator">??</span> <span class="token string single-quoted-string">''</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$remoteAddress</span> <span class="token operator">===</span> <span class="token string single-quoted-string">''</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Psr17Factory</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+                <span class="token operator">-&gt;</span><span class="token function">createResponse</span><span class="token punctuation">(</span>
+                    <span class="token number">400</span><span class="token punctuation">,</span>
+                    <span class="token string single-quoted-string">'Unable to determine client IP address'</span>
+                <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span> <span class="token function">isIpAllowed</span><span class="token punctuation">(</span><span class="token variable">$remoteAddress</span><span class="token punctuation">,</span> <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">allowList</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Psr17Factory</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+                <span class="token operator">-&gt;</span><span class="token function">createResponse</span><span class="token punctuation">(</span>
+                    <span class="token number">403</span><span class="token punctuation">,</span>
+                    <span class="token string single-quoted-string">'Access denied from your IP address'</span>
+                <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">return</span> <span class="token variable">$handler</span><span class="token operator">-&gt;</span><span class="token function">handle</span><span class="token punctuation">(</span><span class="token variable">$request</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>This allows to pass MiddlewareName with constructor arguments (as in when defining <a href="https://chevere.org/packages/router" target="_blank" rel="noopener noreferrer">routes<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>):</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token variable">$middlewareName</span> <span class="token operator">=</span> <span class="token class-name static-context">AllowListMiddleware</span><span class="token operator">::</span><span class="token function">with</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'192.168.1.1'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="attributes"><a href="#attributes" class="header-anchor">#</a> Attributes</h2> <p>Use <a href="https://www.php.net/manual/en/language.attributes.overview.php" target="_blank" rel="noopener noreferrer">attributes<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> to add context for <a href="#controller">Controller</a> and <a href="#middleware">Middleware</a>.</p> <h3 id="request"><a href="#request" class="header-anchor">#</a> Request</h3> <p>Request metadata can be defined using the <code>Request</code> attribute. It supports to define multiple Header arguments.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>Http<span class="token punctuation">\</span>Attributes<span class="token punctuation">\</span>Request</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>Http<span class="token punctuation">\</span>Header</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>Http<span class="token punctuation">\</span>Controller</span><span class="token punctuation">;</span>
+
+<span class="token attribute"><span class="token delimiter punctuation">#[</span><span class="token attribute-content"><span class="token attribute-class-name class-name">Request</span><span class="token punctuation">(</span>
+    <span class="token attribute-class-name class-name">new</span> <span class="token attribute-class-name class-name">Header</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'Accept'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'application/json'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token attribute-class-name class-name">new</span> <span class="token attribute-class-name class-name">Header</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'Connection'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'keep-alive'</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span></span><span class="token delimiter punctuation">]</span></span>
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">ResourceGetController</span> <span class="token keyword">extends</span> <span class="token class-name">Controller</span>
+</code></pre></div><p>Use function <code>getRequest</code> to read the <code>Request</code> attribute.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>Http<span class="token punctuation">\</span>getRequest</span><span class="token punctuation">;</span>
+
+<span class="token function">getRequest</span><span class="token punctuation">(</span><span class="token class-name static-context">ResourceGetController</span><span class="token operator">::</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="response"><a href="#response" class="header-anchor">#</a> Response</h3> <p>Response metadata can be defined using the <code>Response</code> attribute. It supports to define Status and multiple Header arguments.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>Http<span class="token punctuation">\</span>Attributes<span class="token punctuation">\</span>Response</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>Http<span class="token punctuation">\</span>Header</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>Http<span class="token punctuation">\</span>Controller</span><span class="token punctuation">;</span>
+
+<span class="token attribute"><span class="token delimiter punctuation">#[</span><span class="token attribute-content"><span class="token attribute-class-name class-name">Response</span><span class="token punctuation">(</span>
+    <span class="token attribute-class-name class-name">new</span> <span class="token attribute-class-name class-name">Status</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token attribute-class-name class-name">new</span> <span class="token attribute-class-name class-name">Header</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'Content-Disposition'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'attachment'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token attribute-class-name class-name">new</span> <span class="token attribute-class-name class-name">Header</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'Content-Type'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'application/json'</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span></span><span class="token delimiter punctuation">]</span></span>
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">ResourceGetController</span> <span class="token keyword">extends</span> <span class="token class-name">Controller</span>
+</code></pre></div><p>Use function <code>getResponse</code> to read the <code>Response</code> attribute.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>Http<span class="token punctuation">\</span>getResponse</span><span class="token punctuation">;</span>
+
+<span class="token function">getResponse</span><span class="token punctuation">(</span><span class="token class-name static-context">ResourceGetController</span><span class="token operator">::</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/chevere/docs/edit/main/packages/http.md" target="_blank" rel="noopener noreferrer">Edit this page</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.d34653bd.js" defer></script><script src="/assets/js/2.b3d98ebb.js" defer></script><script src="/assets/js/1.cbf95cfe.js" defer></script><script src="/assets/js/40.17367ac9.js" defer></script>
+  </body>
+</html>

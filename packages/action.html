@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Action | Chevere</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/logo.png">
+    <link rel="apple-touch-icon" href="/logo.png">
+    <meta name="description" content="High quality library for building server-side software">
+    <meta property="og:site_name" content="Chevere">
+    <meta property="og:title" content="Action">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/packages/action.html">
+    <meta name="twitter:title" content="Action">
+    <meta name="twitter:url" content="/packages/action.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preload" href="/assets/css/0.styles.0f7b7e19.css" as="style"><link rel="preload" href="/assets/js/app.d34653bd.js" as="script"><link rel="preload" href="/assets/js/2.b3d98ebb.js" as="script"><link rel="preload" href="/assets/js/1.cbf95cfe.js" as="script"><link rel="preload" href="/assets/js/36.7dadbdad.js" as="script"><link rel="prefetch" href="/assets/js/10.ce1ffa88.js"><link rel="prefetch" href="/assets/js/11.19c30390.js"><link rel="prefetch" href="/assets/js/12.63244053.js"><link rel="prefetch" href="/assets/js/13.7278834f.js"><link rel="prefetch" href="/assets/js/14.ddbbd723.js"><link rel="prefetch" href="/assets/js/15.951b87f8.js"><link rel="prefetch" href="/assets/js/16.22953f39.js"><link rel="prefetch" href="/assets/js/17.37cdd360.js"><link rel="prefetch" href="/assets/js/18.ac720a26.js"><link rel="prefetch" href="/assets/js/19.265c60db.js"><link rel="prefetch" href="/assets/js/20.b5e0f461.js"><link rel="prefetch" href="/assets/js/21.f8a5d0fc.js"><link rel="prefetch" href="/assets/js/22.c7db5a2e.js"><link rel="prefetch" href="/assets/js/23.a460b2d2.js"><link rel="prefetch" href="/assets/js/24.86dbe629.js"><link rel="prefetch" href="/assets/js/25.c73b6e9d.js"><link rel="prefetch" href="/assets/js/26.f000397d.js"><link rel="prefetch" href="/assets/js/27.b31a4070.js"><link rel="prefetch" href="/assets/js/28.496ebfd9.js"><link rel="prefetch" href="/assets/js/29.05fbe802.js"><link rel="prefetch" href="/assets/js/3.f1e808b9.js"><link rel="prefetch" href="/assets/js/30.71265950.js"><link rel="prefetch" href="/assets/js/31.e70afbfe.js"><link rel="prefetch" href="/assets/js/32.cfb0ea4f.js"><link rel="prefetch" href="/assets/js/33.1a8363dd.js"><link rel="prefetch" href="/assets/js/34.fffa1c28.js"><link rel="prefetch" href="/assets/js/35.34dbf8b8.js"><link rel="prefetch" href="/assets/js/37.04acf26c.js"><link rel="prefetch" href="/assets/js/38.445c0cf6.js"><link rel="prefetch" href="/assets/js/39.8f93d2ef.js"><link rel="prefetch" href="/assets/js/4.17348ca1.js"><link rel="prefetch" href="/assets/js/40.17367ac9.js"><link rel="prefetch" href="/assets/js/41.84fecf3f.js"><link rel="prefetch" href="/assets/js/42.f05895a0.js"><link rel="prefetch" href="/assets/js/43.3f60a48f.js"><link rel="prefetch" href="/assets/js/44.bf84ff95.js"><link rel="prefetch" href="/assets/js/45.707dd8ea.js"><link rel="prefetch" href="/assets/js/46.e9f9b4e0.js"><link rel="prefetch" href="/assets/js/47.f72248a4.js"><link rel="prefetch" href="/assets/js/48.6d6f2739.js"><link rel="prefetch" href="/assets/js/49.26c317d9.js"><link rel="prefetch" href="/assets/js/5.e159fa16.js"><link rel="prefetch" href="/assets/js/50.fc323f0d.js"><link rel="prefetch" href="/assets/js/51.dff8e62e.js"><link rel="prefetch" href="/assets/js/52.78353147.js"><link rel="prefetch" href="/assets/js/53.b63a6e35.js"><link rel="prefetch" href="/assets/js/54.229b25c6.js"><link rel="prefetch" href="/assets/js/6.e3ac936f.js"><link rel="prefetch" href="/assets/js/7.8fcd73e7.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.92fa0d62.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0f7b7e19.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.svg" alt="Chevere" class="logo"> <span class="site-name can-hide">Chevere</span></a> <div class="links"><form id="search-form" role="search" class="algolia-search-wrapper search-box"><input id="algolia-search-input" class="search-query"></form> <nav class="nav-links can-hide"><div class="nav-item"><a href="/introduction/" class="nav-link">
+  Intro
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Packages Menu" class="dropdown-title"><span class="title">Packages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Packages Menu" class="mobile-dropdown-title"><span class="title">Packages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/packages/action.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Action
+</a></li><li class="dropdown-item"><!----> <a href="/packages/container.html" class="nav-link">
+  Container
+</a></li><li class="dropdown-item"><!----> <a href="/packages/data-structure.html" class="nav-link">
+  DataStructure
+</a></li><li class="dropdown-item"><!----> <a href="/packages/filesystem.html" class="nav-link">
+  Filesystem
+</a></li><li class="dropdown-item"><!----> <a href="/packages/http.html" class="nav-link">
+  Http
+</a></li><li class="dropdown-item"><!----> <a href="/packages/message.html" class="nav-link">
+  Message
+</a></li><li class="dropdown-item"><!----> <a href="/packages/parameter.html" class="nav-link">
+  Parameter
+</a></li><li class="dropdown-item"><!----> <a href="/packages/regex.html" class="nav-link">
+  Regex
+</a></li><li class="dropdown-item"><!----> <a href="/packages/router.html" class="nav-link">
+  Router
+</a></li><li class="dropdown-item"><!----> <a href="/packages/schwager.html" class="nav-link">
+  Schwager
+</a></li><li class="dropdown-item"><!----> <a href="/packages/sql2p.html" class="nav-link">
+  SQL2P
+</a></li><li class="dropdown-item"><!----> <a href="/packages/standard.html" class="nav-link">
+  Standard
+</a></li><li class="dropdown-item"><!----> <a href="/packages/throwable-handler.html" class="nav-link">
+  ThrowableHandler
+</a></li><li class="dropdown-item"><!----> <a href="/packages/trace.html" class="nav-link">
+  Trace
+</a></li><li class="dropdown-item"><!----> <a href="/packages/var-dump.html" class="nav-link">
+  VarDump
+</a></li><li class="dropdown-item"><!----> <a href="/packages/var-support.html" class="nav-link">
+  VarSupport
+</a></li><li class="dropdown-item"><!----> <a href="/packages/workflow.html" class="nav-link">
+  Workflow
+</a></li><li class="dropdown-item"><!----> <a href="/packages/writer.html" class="nav-link">
+  Writer
+</a></li><li class="dropdown-item"><!----> <a href="/packages/xrdebug.html" class="nav-link">
+  xrDebug
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Dev Menu" class="dropdown-title"><span class="title">Dev</span> <span class="arrow down"></span></button> <button type="button" aria-label="Dev Menu" class="mobile-dropdown-title"><span class="title">Dev</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Standard
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/standard/quality.html" class="nav-link">
+  Quality
+</a></li><li class="dropdown-subitem"><a href="/developer/standard/coding.html" class="nav-link">
+  Coding
+</a></li><li class="dropdown-subitem"><a href="/developer/standard/immutability.html" class="nav-link">
+  Immutability
+</a></li><li class="dropdown-subitem"><a href="/developer/standard/testing.html" class="nav-link">
+  Testing
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Spec
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/spec/interfaces.html" class="nav-link">
+  Interfaces
+</a></li><li class="dropdown-subitem"><a href="/developer/spec/components.html" class="nav-link">
+  Components
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Environment
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/environment/system.html" class="nav-link">
+  System
+</a></li><li class="dropdown-subitem"><a href="/developer/environment/workspace.html" class="nav-link">
+  Workspace
+</a></li></ul></li></ul></div></div> <a href="https://github.com/chevere/chevere" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/introduction/" class="nav-link">
+  Intro
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Packages Menu" class="dropdown-title"><span class="title">Packages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Packages Menu" class="mobile-dropdown-title"><span class="title">Packages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/packages/action.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Action
+</a></li><li class="dropdown-item"><!----> <a href="/packages/container.html" class="nav-link">
+  Container
+</a></li><li class="dropdown-item"><!----> <a href="/packages/data-structure.html" class="nav-link">
+  DataStructure
+</a></li><li class="dropdown-item"><!----> <a href="/packages/filesystem.html" class="nav-link">
+  Filesystem
+</a></li><li class="dropdown-item"><!----> <a href="/packages/http.html" class="nav-link">
+  Http
+</a></li><li class="dropdown-item"><!----> <a href="/packages/message.html" class="nav-link">
+  Message
+</a></li><li class="dropdown-item"><!----> <a href="/packages/parameter.html" class="nav-link">
+  Parameter
+</a></li><li class="dropdown-item"><!----> <a href="/packages/regex.html" class="nav-link">
+  Regex
+</a></li><li class="dropdown-item"><!----> <a href="/packages/router.html" class="nav-link">
+  Router
+</a></li><li class="dropdown-item"><!----> <a href="/packages/schwager.html" class="nav-link">
+  Schwager
+</a></li><li class="dropdown-item"><!----> <a href="/packages/sql2p.html" class="nav-link">
+  SQL2P
+</a></li><li class="dropdown-item"><!----> <a href="/packages/standard.html" class="nav-link">
+  Standard
+</a></li><li class="dropdown-item"><!----> <a href="/packages/throwable-handler.html" class="nav-link">
+  ThrowableHandler
+</a></li><li class="dropdown-item"><!----> <a href="/packages/trace.html" class="nav-link">
+  Trace
+</a></li><li class="dropdown-item"><!----> <a href="/packages/var-dump.html" class="nav-link">
+  VarDump
+</a></li><li class="dropdown-item"><!----> <a href="/packages/var-support.html" class="nav-link">
+  VarSupport
+</a></li><li class="dropdown-item"><!----> <a href="/packages/workflow.html" class="nav-link">
+  Workflow
+</a></li><li class="dropdown-item"><!----> <a href="/packages/writer.html" class="nav-link">
+  Writer
+</a></li><li class="dropdown-item"><!----> <a href="/packages/xrdebug.html" class="nav-link">
+  xrDebug
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Dev Menu" class="dropdown-title"><span class="title">Dev</span> <span class="arrow down"></span></button> <button type="button" aria-label="Dev Menu" class="mobile-dropdown-title"><span class="title">Dev</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Standard
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/standard/quality.html" class="nav-link">
+  Quality
+</a></li><li class="dropdown-subitem"><a href="/developer/standard/coding.html" class="nav-link">
+  Coding
+</a></li><li class="dropdown-subitem"><a href="/developer/standard/immutability.html" class="nav-link">
+  Immutability
+</a></li><li class="dropdown-subitem"><a href="/developer/standard/testing.html" class="nav-link">
+  Testing
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Spec
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/spec/interfaces.html" class="nav-link">
+  Interfaces
+</a></li><li class="dropdown-subitem"><a href="/developer/spec/components.html" class="nav-link">
+  Components
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Environment
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/developer/environment/system.html" class="nav-link">
+  System
+</a></li><li class="dropdown-subitem"><a href="/developer/environment/workspace.html" class="nav-link">
+  Workspace
+</a></li></ul></li></ul></div></div> <a href="https://github.com/chevere/chevere" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Action</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/packages/action.html#summary" class="sidebar-link">Summary</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/packages/action.html#installing" class="sidebar-link">Installing</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/packages/action.html#quick-start" class="sidebar-link">Quick Start</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/packages/action.html#creating-an-action" class="sidebar-link">Creating an Action</a></li><li class="sidebar-sub-header"><a href="/packages/action.html#adding-validation" class="sidebar-link">Adding Validation</a></li><li class="sidebar-sub-header"><a href="/packages/action.html#invoking-an-action" class="sidebar-link">Invoking an Action</a></li></ul></li><li><a href="/packages/action.html#advanced-usage" class="sidebar-link">Advanced Usage</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/packages/action.html#parameter-validation-methods" class="sidebar-link">Parameter Validation Methods</a></li><li class="sidebar-sub-header"><a href="/packages/action.html#assertion-methods" class="sidebar-link">Assertion Methods</a></li><li class="sidebar-sub-header"><a href="/packages/action.html#advanced-rules" class="sidebar-link">Advanced Rules</a></li><li class="sidebar-sub-header"><a href="/packages/action.html#action-setup-method" class="sidebar-link">Action Setup Method</a></li><li class="sidebar-sub-header"><a href="/packages/action.html#actionname" class="sidebar-link">ActionName</a></li><li class="sidebar-sub-header"><a href="/packages/action.html#reflection-access" class="sidebar-link">Reflection Access</a></li><li class="sidebar-sub-header"><a href="/packages/action.html#creating-a-controller" class="sidebar-link">Creating a Controller</a></li><li class="sidebar-sub-header"><a href="/packages/action.html#usage-example" class="sidebar-link">Usage Example</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="action"><a href="#action" class="header-anchor">#</a> Action</h1> <h2 id="summary"><a href="#summary" class="header-anchor">#</a> Summary</h2> <p><strong>Chevere Action</strong> is a PHP library that encapsulates application operations as reusable, self-validating objects. Built on the <a href="https://github.com/chevere/parameter" target="_blank" rel="noopener noreferrer">Parameter<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> library, it implements the Action Design Pattern to enforce strict input/output validation at the class level, reducing runtime errors and improving code reliability with minimal boilerplate.</p> <h2 id="installing"><a href="#installing" class="header-anchor">#</a> Installing</h2> <p>Action is available through <a href="https://packagist.org/packages/chevere/action" target="_blank" rel="noopener noreferrer">Packagist<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> and the repository source is at <a href="https://github.com/chevere/action" target="_blank" rel="noopener noreferrer">chevere/action<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">composer</span> require chevere/action
+</code></pre></div><h2 id="quick-start"><a href="#quick-start" class="header-anchor">#</a> Quick Start</h2> <h3 id="creating-an-action"><a href="#creating-an-action" class="header-anchor">#</a> Creating an Action</h3> <p>Create an Action by implementing the <code>ActionInterface</code> either by using <code>ActionTrait</code> or extending the <code>Action</code> class:</p> <h4 id="using-actiontrait"><a href="#using-actiontrait" class="header-anchor">#</a> Using ActionTrait</h4> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>Action<span class="token punctuation">\</span>Interfaces<span class="token punctuation">\</span>ActionInterface</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>Action<span class="token punctuation">\</span>Traits<span class="token punctuation">\</span>ActionTrait</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">GetUserAction</span> <span class="token keyword">implements</span> <span class="token class-name">ActionInterface</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">use</span> <span class="token package">ActionTrait</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">__invoke</span><span class="token punctuation">(</span><span class="token keyword type-hint">int</span> <span class="token variable">$userId</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">array</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token string single-quoted-string">'id'</span> <span class="token operator">=&gt;</span> <span class="token variable">$userId</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'name'</span> <span class="token operator">=&gt;</span> <span class="token string single-quoted-string">'John'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="extending-action"><a href="#extending-action" class="header-anchor">#</a> Extending Action</h4> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>Action<span class="token punctuation">\</span>Action</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">GetUserAction</span> <span class="token keyword">extends</span> <span class="token class-name">Action</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">__invoke</span><span class="token punctuation">(</span><span class="token keyword type-hint">int</span> <span class="token variable">$userId</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">array</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token string single-quoted-string">'id'</span> <span class="token operator">=&gt;</span> <span class="token variable">$userId</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'name'</span> <span class="token operator">=&gt;</span> <span class="token string single-quoted-string">'John'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="adding-validation"><a href="#adding-validation" class="header-anchor">#</a> Adding Validation</h3> <p>Enhance Actions with input and output validation using attributes from the Parameter library:</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>Action<span class="token punctuation">\</span>Action</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>Parameter<span class="token punctuation">\</span>Attributes<span class="token punctuation">\</span>_arrayp</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>Parameter<span class="token punctuation">\</span>Attributes<span class="token punctuation">\</span>_int</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>Parameter<span class="token punctuation">\</span>Attributes<span class="token punctuation">\</span>_string</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>Parameter<span class="token punctuation">\</span>Attributes<span class="token punctuation">\</span>_return</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">GetUserAction</span> <span class="token keyword">extends</span> <span class="token class-name">Action</span>
+<span class="token punctuation">{</span>
+    <span class="token attribute"><span class="token delimiter punctuation">#[</span><span class="token attribute-content"><span class="token attribute-class-name class-name">_return</span><span class="token punctuation">(</span>
+        <span class="token attribute-class-name class-name">new</span> <span class="token attribute-class-name class-name">_arrayp</span><span class="token punctuation">(</span>
+            <span class="token attribute-class-name class-name">userId</span><span class="token punctuation">:</span> <span class="token attribute-class-name class-name">new</span> <span class="token attribute-class-name class-name">_int</span><span class="token punctuation">(</span><span class="token attribute-class-name class-name">min</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token attribute-class-name class-name">name</span><span class="token punctuation">:</span> <span class="token attribute-class-name class-name">new</span> <span class="token attribute-class-name class-name">_string</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token punctuation">)</span>
+    <span class="token punctuation">)</span></span><span class="token delimiter punctuation">]</span></span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">__invoke</span><span class="token punctuation">(</span>
+        <span class="token attribute"><span class="token delimiter punctuation">#[</span><span class="token attribute-content"><span class="token attribute-class-name class-name">_int</span><span class="token punctuation">(</span><span class="token attribute-class-name class-name">min</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">)</span></span><span class="token delimiter punctuation">]</span></span>
+        <span class="token keyword type-declaration">int</span> <span class="token variable">$userId</span>
+    <span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">array</span> <span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token function">assertArguments</span><span class="token punctuation">(</span><span class="token variable">$userId</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token variable">$result</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string single-quoted-string">'id'</span> <span class="token operator">=&gt;</span> <span class="token variable">$userId</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'name'</span> <span class="token operator">=&gt;</span> <span class="token string single-quoted-string">'John'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">return</span> <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token function">assertReturn</span><span class="token punctuation">(</span><span class="token variable">$result</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="invoking-an-action"><a href="#invoking-an-action" class="header-anchor">#</a> Invoking an Action</h3> <p>Invoke an Action as you would a function:</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token variable">$action</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GetUserAction</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$result</span> <span class="token operator">=</span> <span class="token variable">$action</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// or $action-&gt;__invoke(1)</span>
+</code></pre></div><h2 id="advanced-usage"><a href="#advanced-usage" class="header-anchor">#</a> Advanced Usage</h2> <h3 id="parameter-validation-methods"><a href="#parameter-validation-methods" class="header-anchor">#</a> Parameter Validation Methods</h3> <p>Define validation rules using dedicated methods for more control and flexibility. This is especially useful when validation rules cannot be expressed as attribute attributes (literal values only).</p> <h4 id="using-acceptparameters"><a href="#using-acceptparameters" class="header-anchor">#</a> Using <code>acceptParameters()</code></h4> <p>Define input validation rules centrally:</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>Action<span class="token punctuation">\</span>Action</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>Parameter<span class="token punctuation">\</span>Interfaces<span class="token punctuation">\</span>ParametersInterface</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>Parameter<span class="token punctuation">\</span>parameters</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>Parameter<span class="token punctuation">\</span>string</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>Parameter<span class="token punctuation">\</span>int</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">CreatePostAction</span> <span class="token keyword">extends</span> <span class="token class-name">Action</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">__invoke</span><span class="token punctuation">(</span>
+        <span class="token keyword type-hint">string</span> <span class="token variable">$title</span><span class="token punctuation">,</span>
+        <span class="token keyword type-hint">string</span> <span class="token variable">$content</span><span class="token punctuation">,</span>
+        <span class="token keyword type-hint">int</span> <span class="token variable">$authorId</span>
+    <span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">array</span> <span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token function">assertArguments</span><span class="token punctuation">(</span><span class="token variable">$title</span><span class="token punctuation">,</span> <span class="token variable">$content</span><span class="token punctuation">,</span> <span class="token variable">$authorId</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token string single-quoted-string">'id'</span> <span class="token operator">=&gt;</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">function</span> <span class="token function-definition function">acceptParameters</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token class-name return-type">ParametersInterface</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token function">parameters</span><span class="token punctuation">(</span>
+            <span class="token argument-name">title</span><span class="token punctuation">:</span> <span class="token keyword type-declaration">string</span><span class="token punctuation">(</span><span class="token argument-name">minLength</span><span class="token punctuation">:</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token argument-name">maxLength</span><span class="token punctuation">:</span> <span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token argument-name">content</span><span class="token punctuation">:</span> <span class="token keyword type-declaration">string</span><span class="token punctuation">(</span><span class="token argument-name">minLength</span><span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token argument-name">authorId</span><span class="token punctuation">:</span> <span class="token keyword type-declaration">int</span><span class="token punctuation">(</span><span class="token argument-name">min</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="using-acceptreturn"><a href="#using-acceptreturn" class="header-anchor">#</a> Using <code>acceptReturn()</code></h4> <p>Define output validation rules:</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>Action<span class="token punctuation">\</span>Action</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>Parameter<span class="token punctuation">\</span>Interfaces<span class="token punctuation">\</span>ParameterInterface</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>Parameter<span class="token punctuation">\</span>arrayOf</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>Parameter<span class="token punctuation">\</span>int</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">GetUserAction</span> <span class="token keyword">extends</span> <span class="token class-name">Action</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">__invoke</span><span class="token punctuation">(</span><span class="token keyword type-hint">int</span> <span class="token variable">$userId</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">array</span>
+    <span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token function">assertArguments</span><span class="token punctuation">(</span><span class="token variable">$userId</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token variable">$result</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string single-quoted-string">'id'</span> <span class="token operator">=&gt;</span> <span class="token variable">$userId</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'name'</span> <span class="token operator">=&gt;</span> <span class="token string single-quoted-string">'John'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token function">assertReturn</span><span class="token punctuation">(</span><span class="token variable">$result</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">function</span> <span class="token function-definition function">acceptReturn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token class-name return-type">ParameterInterface</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token function">arrayOf</span><span class="token punctuation">(</span>
+            <span class="token keyword type-declaration">int</span><span class="token punctuation">(</span><span class="token argument-name">key</span><span class="token punctuation">:</span> <span class="token string single-quoted-string">'id'</span><span class="token punctuation">,</span> <span class="token argument-name">min</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token keyword type-declaration">string</span><span class="token punctuation">(</span><span class="token argument-name">key</span><span class="token punctuation">:</span> <span class="token string single-quoted-string">'name'</span><span class="token punctuation">,</span> <span class="token argument-name">minLength</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="assertion-methods"><a href="#assertion-methods" class="header-anchor">#</a> Assertion Methods</h3> <p>Control exactly when and how validations occur:</p> <h4 id="assertarguments"><a href="#assertarguments" class="header-anchor">#</a> <code>assertArguments()</code></h4> <p>Validate input against defined rules. Can be called with explicit arguments or automatically from the caller context:</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token comment">// Automatic extraction from caller context</span>
+<span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">__invoke</span><span class="token punctuation">(</span><span class="token variable">$foo</span><span class="token punctuation">,</span> <span class="token variable">$bar</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token function">assertArguments</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Explicit arguments</span>
+<span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">__invoke</span><span class="token punctuation">(</span><span class="token variable">$foo</span><span class="token punctuation">,</span> <span class="token variable">$bar</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token function">assertArguments</span><span class="token punctuation">(</span><span class="token variable">$foo</span><span class="token punctuation">,</span> <span class="token variable">$bar</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Using get_defined_vars()</span>
+<span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">__invoke</span><span class="token punctuation">(</span><span class="token variable">$foo</span><span class="token punctuation">,</span> <span class="token variable">$bar</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token function">assertArguments</span><span class="token punctuation">(</span><span class="token operator">...</span><span class="token function">get_defined_vars</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="assertreturn"><a href="#assertreturn" class="header-anchor">#</a> <code>assertReturn()</code></h4> <p>Validate the return value against defined rules:</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">__invoke</span><span class="token punctuation">(</span><span class="token keyword type-hint">int</span> <span class="token variable">$id</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">array</span>
+<span class="token punctuation">{</span>
+    <span class="token variable">$result</span> <span class="token operator">=</span> <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token function">fetchUser</span><span class="token punctuation">(</span><span class="token variable">$id</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token function">assertReturn</span><span class="token punctuation">(</span><span class="token variable">$result</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="assert"><a href="#assert" class="header-anchor">#</a> <code>assert()</code></h4> <p>Validate runtime rule coherence. Useful for checking internal state:</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">__invoke</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">void</span>
+<span class="token punctuation">{</span>
+    <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token function">setupDependencies</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token function">assert</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="advanced-rules"><a href="#advanced-rules" class="header-anchor">#</a> Advanced Rules</h3> <h4 id="static-rules-with-acceptrulesstatic"><a href="#static-rules-with-acceptrulesstatic" class="header-anchor">#</a> Static Rules with <code>acceptRulesStatic()</code></h4> <p>Enforce design rules at class definition time. Called before any assertions:</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">function</span> <span class="token function-definition function">acceptRulesStatic</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">void</span>
+<span class="token punctuation">{</span>
+    <span class="token variable">$reflection</span> <span class="token operator">=</span> <span class="token keyword static-context">static</span><span class="token operator">::</span><span class="token function">reflection</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// Enforce that parameter $password is never used</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$reflection</span><span class="token operator">-&gt;</span><span class="token function">parameters</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-&gt;</span><span class="token function">has</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'password'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">LogicException</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'Password parameter not allowed'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="runtime-rules-with-acceptrulesruntime"><a href="#runtime-rules-with-acceptrulesruntime" class="header-anchor">#</a> Runtime Rules with <code>acceptRulesRuntime()</code></h4> <p>Enforce rules based on instance state. Called before assertions at invocation time:</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">private</span> <span class="token keyword type-declaration">array</span> <span class="token variable">$config</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">acceptRulesRuntime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">void</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">empty</span><span class="token punctuation">(</span><span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">config</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">RuntimeException</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'Configuration required before invocation'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="action-setup-method"><a href="#action-setup-method" class="header-anchor">#</a> Action Setup Method</h3> <p>Use <code>setUp()</code> to initialize an Action before invocation:</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">class</span> <span class="token class-name-definition class-name">SendEmailAction</span> <span class="token keyword">extends</span> <span class="token class-name">Action</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">private</span> <span class="token class-name type-declaration">SmtpConfig</span> <span class="token variable">$smtpConfig</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">setUp</span><span class="token punctuation">(</span><span class="token class-name type-declaration">SmtpConfig</span> <span class="token variable">$config</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">void</span>
+    <span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">smtpConfig</span> <span class="token operator">=</span> <span class="token variable">$config</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">__invoke</span><span class="token punctuation">(</span><span class="token keyword type-hint">string</span> <span class="token variable">$email</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">bool</span>
+    <span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token function">acceptRulesRuntime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token function">mail</span><span class="token punctuation">(</span><span class="token variable">$email</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'Hello'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'World'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">acceptRulesRuntime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">void</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">isset</span><span class="token punctuation">(</span><span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">smtpConfig</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">RuntimeException</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'SMTP configuration required'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Usage</span>
+<span class="token variable">$action</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">SendEmailAction</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$action</span><span class="token operator">-&gt;</span><span class="token function">setUp</span><span class="token punctuation">(</span><span class="token variable">$smtpConfig</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$result</span> <span class="token operator">=</span> <span class="token variable">$action</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'user@example.com'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="actionname"><a href="#actionname" class="header-anchor">#</a> ActionName</h3> <p>Store and manage Action instances with their setup arguments using <code>ActionName</code>:</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>Action<span class="token punctuation">\</span>ActionName</span><span class="token punctuation">;</span>
+
+<span class="token variable">$actionName</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ActionName</span><span class="token punctuation">(</span>
+    <span class="token class-name static-context">SendEmailAction</span><span class="token operator">::</span><span class="token keyword">class</span><span class="token punctuation">,</span>
+    <span class="token variable">$smtpConfig</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Later: reconstruct and invoke</span>
+<span class="token variable">$className</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword type-casting">string</span><span class="token punctuation">)</span> <span class="token variable">$actionName</span><span class="token punctuation">;</span>
+<span class="token variable">$action</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token variable">$className</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$action</span><span class="token operator">-&gt;</span><span class="token function">setUp</span><span class="token punctuation">(</span><span class="token operator">...</span><span class="token variable">$actionName</span><span class="token operator">-&gt;</span><span class="token function">arguments</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$action</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'user@example.com'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>Or use a factory method on your Action:</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">class</span> <span class="token class-name-definition class-name">SendEmailAction</span> <span class="token keyword">extends</span> <span class="token class-name">Action</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">function</span> <span class="token function-definition function">configure</span><span class="token punctuation">(</span><span class="token class-name type-declaration">SmtpConfig</span> <span class="token variable">$config</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token class-name return-type">ActionNameInterface</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">ActionName</span><span class="token punctuation">(</span><span class="token keyword static-context">static</span><span class="token operator">::</span><span class="token keyword">class</span><span class="token punctuation">,</span> <span class="token variable">$config</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Usage</span>
+<span class="token variable">$configured</span> <span class="token operator">=</span> <span class="token class-name static-context">SendEmailAction</span><span class="token operator">::</span><span class="token function">configure</span><span class="token punctuation">(</span><span class="token variable">$smtpConfig</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$action</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token punctuation">(</span><span class="token keyword type-casting">string</span><span class="token punctuation">)</span><span class="token variable">$configured</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$action</span><span class="token operator">-&gt;</span><span class="token function">setUp</span><span class="token punctuation">(</span><span class="token operator">...</span><span class="token variable">$configured</span><span class="token operator">-&gt;</span><span class="token function">arguments</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="reflection-access"><a href="#reflection-access" class="header-anchor">#</a> Reflection Access</h3> <p>Access Action metadata using <code>reflection()</code>:</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token variable">$action</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">MyAction</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Get parameter definitions</span>
+<span class="token variable">$parameters</span> <span class="token operator">=</span> <span class="token variable">$action</span><span class="token operator">::</span><span class="token function">reflection</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-&gt;</span><span class="token function">parameters</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Get return definition</span>
+<span class="token variable">$return</span> <span class="token operator">=</span> <span class="token variable">$action</span><span class="token operator">::</span><span class="token function">reflection</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-&gt;</span><span class="token function">return</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Check if parameter exists</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$parameters</span><span class="token operator">-&gt;</span><span class="token function">has</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'userId'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Iterate parameters</span>
+<span class="token keyword">foreach</span> <span class="token punctuation">(</span><span class="token variable">$parameters</span> <span class="token keyword">as</span> <span class="token variable">$name</span> <span class="token operator">=&gt;</span> <span class="token variable">$parameter</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">echo</span> <span class="token variable">$name</span> <span class="token operator">.</span> <span class="token string single-quoted-string">': '</span> <span class="token operator">.</span> <span class="token function">get_class</span><span class="token punctuation">(</span><span class="token variable">$parameter</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>The <code>Controller</code> is a specialized Action for handling command-like instructions. Unlike standard Actions that accept any type of parameters, Controllers restrict parameters to scalar types: <code>string</code>, <code>int</code>, and <code>float</code>.</p> <p>Controllers are ideal for handling user input from APIs, CLI commands, or form submissions where all arguments arrive as scalar values.</p> <h3 id="creating-a-controller"><a href="#creating-a-controller" class="header-anchor">#</a> Creating a Controller</h3> <p>Extend the <code>Controller</code> class to create a compliant Controller:</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>Action<span class="token punctuation">\</span>Controller</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Chevere<span class="token punctuation">\</span>Parameter<span class="token punctuation">\</span>Interfaces<span class="token punctuation">\</span>ParametersInterface</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>Parameter<span class="token punctuation">\</span>parameters</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>Parameter<span class="token punctuation">\</span>string</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token keyword">function</span> <span class="token package">Chevere<span class="token punctuation">\</span>Parameter<span class="token punctuation">\</span>int</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">CreatePostController</span> <span class="token keyword">extends</span> <span class="token class-name">Controller</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">__invoke</span><span class="token punctuation">(</span>
+        <span class="token keyword type-hint">string</span> <span class="token variable">$title</span><span class="token punctuation">,</span>
+        <span class="token keyword type-hint">string</span> <span class="token variable">$content</span><span class="token punctuation">,</span>
+        <span class="token keyword type-hint">int</span> <span class="token variable">$authorId</span>
+    <span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">array</span> <span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token function">assertArguments</span><span class="token punctuation">(</span><span class="token variable">$title</span><span class="token punctuation">,</span> <span class="token variable">$content</span><span class="token punctuation">,</span> <span class="token variable">$authorId</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token punctuation">[</span>
+            <span class="token string single-quoted-string">'id'</span> <span class="token operator">=&gt;</span> <span class="token number">1</span><span class="token punctuation">,</span>
+            <span class="token string single-quoted-string">'title'</span> <span class="token operator">=&gt;</span> <span class="token variable">$title</span><span class="token punctuation">,</span>
+            <span class="token string single-quoted-string">'author'</span> <span class="token operator">=&gt;</span> <span class="token variable">$authorId</span>
+        <span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">function</span> <span class="token function-definition function">acceptParameters</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token class-name return-type">ParametersInterface</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token function">parameters</span><span class="token punctuation">(</span>
+            <span class="token argument-name">title</span><span class="token punctuation">:</span> <span class="token keyword type-declaration">string</span><span class="token punctuation">(</span><span class="token argument-name">minLength</span><span class="token punctuation">:</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token argument-name">maxLength</span><span class="token punctuation">:</span> <span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token argument-name">content</span><span class="token punctuation">:</span> <span class="token keyword type-declaration">string</span><span class="token punctuation">(</span><span class="token argument-name">minLength</span><span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token argument-name">authorId</span><span class="token punctuation">:</span> <span class="token keyword type-declaration">int</span><span class="token punctuation">(</span><span class="token argument-name">min</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="usage-example"><a href="#usage-example" class="header-anchor">#</a> Usage Example</h3> <div class="language-php extra-class"><pre class="language-php"><code><span class="token variable">$controller</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">CreatePostController</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$result</span> <span class="token operator">=</span> <span class="token variable">$controller</span><span class="token punctuation">(</span>
+    <span class="token argument-name">title</span><span class="token punctuation">:</span> <span class="token string single-quoted-string">'My First Post'</span><span class="token punctuation">,</span>
+    <span class="token argument-name">content</span><span class="token punctuation">:</span> <span class="token string single-quoted-string">'This is great content.'</span><span class="token punctuation">,</span>
+    <span class="token argument-name">authorId</span><span class="token punctuation">:</span> <span class="token number">42</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// Returns: ['id' =&gt; 1, 'title' =&gt; 'My First Post', 'author' =&gt; 42]</span>
+</code></pre></div><p><strong>Note:</strong> Controllers enforce type validation at the class level. Any parameter with a type other than <code>string|int|float</code> will trigger a validation error during class initialization.</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/chevere/docs/edit/main/packages/action.md" target="_blank" rel="noopener noreferrer">Edit this page</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.d34653bd.js" defer></script><script src="/assets/js/2.b3d98ebb.js" defer></script><script src="/assets/js/1.cbf95cfe.js" defer></script><script src="/assets/js/36.7dadbdad.js" defer></script>
+  </body>
+</html>
